@@ -1,0 +1,15 @@
+services:
+  ollama-nginx:
+    image: nginx:latest
+    container_name: ollama-nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
+    restart: unless-stopped
+    networks:
+      - ollama-docker
+
+networks:
+  ollama-docker:
+    external: false
