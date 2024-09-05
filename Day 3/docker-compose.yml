@@ -1,15 +1,92 @@
+networks:
+  ollama-docker:
+    external: false
+
 services:
+  oauth2-proxy:
+    image: quay.io/oauth2-proxy/oauth2-proxy:latest-alpine
+    container_name: oauth2-proxy
+    command:
+      - --http-address
+      - 0.0.0.0:4180
+    environment:
+      OAUTH2_PROXY_CLIENT_ID: '<from github oauth>'
+      OAUTH2_PROXY_CLIENT_SECRET: '<from github oauth>'
+      OAUTH2_PROXY_COOKIE_REFRESH: 30m
+      OAUTH2_PROXY_COOKIE_SECRET: '<self defined, 32 chars?>'
+      OAUTH2_PROXY_EMAIL_DOMAINS: '*'
+      OAUTH2_PROXY_PROVIDER: github
+      OAUTH2_PROXY_PROVIDER_DISPLAY_NAME: GitHub
+      OAUTH2_PROXY_REDIRECT_URL: http://172.17.0.219/oauth2/callback
+      OAUTH2_PROXY_COOKIE_SECURE: "false" # Disable secure cookies if not using HTTPS
+      OAUTH2_PROXY_SET_XAUTHREQUEST: "true"
+      OAUTH2_PROXY_PASS_USER_HEADERS: "true"
+      OAUTH2_PROXY_PASS_ACCESS_TOKEN: "true"
+    ports:
+      - 4180:4180
+    #networks:
+    #  - ollama-docker
+    #needed for this to talk to github from inside
+    network_mode: "host"
+
   ollama-nginx:
     image: nginx:latest
     container_name: ollama-nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - oauth2-proxy
+      - ollama-webui
     ports:
       - 80:80
+    restart: unless-stopped
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    networks:
+      - ollama-docker
+
+  ollama-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: ollama-webui
+    volumes:
+      - ./ollama/ollama-webui:/app/backend/data
+    depends_on:
+      - ollama
+    ports:
+      - 8080:8080
+    environment:
+      - OLLAMA_BASE_URLS=http://host.docker.internal:7869 #comma separated ollama hosts
+      - ENV=prod
+      - WEBUI_AUTH=False
+      - WEBUI_URL=http://localhost:8080
+      - WEBUI_SECRET_KEY=abc-1x2y3z
+      - ENABLE_OAUTH_SIGNUP=true
+      - OAUTH_MERGE_ACCOUNTS_BY_EMAIL=true
+      - WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email
+      - WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User
+    extra_hosts:
+      - host.docker.internal:host-gateway
     restart: unless-stopped
     networks:
       - ollama-docker
 
-networks:
-  ollama-docker:
-    external: false
+  ollama:
+    volumes:
+      - ./ollama/ollama:/root/.ollama
+    container_name: ollama
+    tty: true
+    restart: unless-stopped
+    image: ollama/ollama:latest
+    ports:
+      - 7869:11434
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+    networks:
+     - ollama-docker
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['all']
+              capabilities: [gpu]
