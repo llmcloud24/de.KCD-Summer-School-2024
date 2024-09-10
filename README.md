@@ -2,6 +2,10 @@
 
 https://llmcloud2024.github.io
 
+## Things that will be covered on Day 3
+1. **Users get to set up and deploy their own LLM** (Sebastian)
+2. **Users get to deploy and run their own BioCypher and BioChatter demos interfaced with their previously deployed LLM** (Sebastian)
+
 ## Things that can be covered on Day 4
 1. **Monitoring and Alerting**
    - [ ] Monitor uptime and response time of the web service using a tool like UptimeRobot
