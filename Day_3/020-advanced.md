@@ -72,8 +72,11 @@ print(response)
 
 Naturally, this is not a very convenient way of having a conversation, but it is
 a substantially more powerful way of programmatically interacting with the
-model. Exercise: inspect the `response` object. What does it contain? How would
-you use it in a real-world application?
+model. 
+
+> [!TIP]
+> As an exercise, inspect the `response` object. What does it contain? How would
+> you use it in a real-world application?
 
 ## Xinference Models
 

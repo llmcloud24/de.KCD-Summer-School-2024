@@ -26,8 +26,11 @@ ollama run llama3.1
 ```
 
 Without specifying the exact model variant, Ollama will deploy the default for
-this model. Exercise: find out, which exact model variant is deployed by default
-(size, quantisation, etc.).
+this model. 
+
+> [!TIP]
+> As an exercise, find out which exact model variant is deployed by default
+> (size, quantisation, etc.).
 
 ## Exercise
 
@@ -46,4 +49,5 @@ time, and inference speed?
 instruct-tuned models like llama3.1?
 
 Feel free to experiment with different models and see how they behave; or, if
-you are interested in other deployment options, proceed to the next section.
+you are interested in other deployment options, proceed to the [next
+section](020-advanced.md).
