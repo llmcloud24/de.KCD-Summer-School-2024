@@ -14,7 +14,8 @@ You should be able to connect to your assigned VM from your machine, using an
 SSH client. The machine should run Ubuntu and have access to the internet, as
 well as Conda, Python, and Docker.
 
-If Conda is not installed, we can install miniforge, a minimal version of
+If Conda is not installed, we can install
+[Miniforge](https://github.com/conda-forge/miniforge), a minimal version of
 Anaconda, by running the following commands:
 
 ```bash
@@ -22,7 +23,7 @@ curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mi
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
-Similarly, Poetry can be installed like this:
+Similarly, [Poetry](https://python-poetry.org) can be installed like this:
 
 ```bash
 curl -sSL https://install.python-poetry.org | python3 -
