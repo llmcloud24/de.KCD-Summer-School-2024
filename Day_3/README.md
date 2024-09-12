@@ -22,6 +22,12 @@ curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mi
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
+Similarly, Poetry can be installed like this:
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
 ## Background
 
 In this session, we will talk about LLMs and how to deploy them in the cloud.
