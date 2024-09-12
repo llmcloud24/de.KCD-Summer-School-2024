@@ -47,6 +47,8 @@ SSL certificates.
 
 Here are diagrams for the basic and advanced deployments:
 
+### Basic Deployment
+
 ```mermaid
 sequenceDiagram
     participant User
@@ -68,6 +70,8 @@ sequenceDiagram
     Next->>Auth: Deploy app with Nginx, domain, and SSL
     Auth->>User: Provide user access to deployed app
 ```
+
+### Advanced Deployment
 
 ```mermaid
 sequenceDiagram
@@ -91,3 +95,36 @@ sequenceDiagram
 
 ## Deploying an LLM - Basic
 
+In the shell of the VM, we start by installing Ollama as instructed in the
+[Ollama Documentation](https://ollama.com/download/linux).
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+We are now already set to deploy an LLM using Ollama. A list of models can be
+found [here](https://ollama.com/library). For instance, we may want to deploy
+the GPT-2 model for historic reasons. It only has a size of 328 MB, and
+interacting with it is fast, but quite different from the commercial models
+available today. Give it a try:
+
+```bash
+ollama run mapler/gpt2
+```
+
+If we want to deploy a current state-of-the-art model, we can use the llama-3.1
+model instead. You can find it at the top of the model page, as it is currently
+by far the most popular model.
+
+```bash
+ollama run llama3.1
+```
+
+Without specifying the exact model variant, Ollama will deploy the default for
+this model. Exercise: find out, which exact model variant is deployed by default
+(size, quantisation, etc.).
+
+### Exercise
+
+Deploy the larger (70B) variant of the llama3.1 model, or a different model from
+the Ollama library. Which differences do you notice between the models?
