@@ -81,8 +81,8 @@ model.
 ## Xinference Models
 
 Xinference provides a long list of builtin models, which are not just
-conversational model, but also embedding, multimodal, and other types of models.
-The full list can be found
+conversational, but also embedding, multimodal, and other types of models. The
+full list can be found
 [here](https://inference.readthedocs.io/en/latest/models/builtin/index.html).
 
 Using the backends included in the library, we can also deploy custom models
