@@ -4,9 +4,9 @@ Table of Contents:
 
 - [Background](#background)
 
-- [Basic deployment](basic.md)
+- [Basic deployment](010-basic.md)
 
-- [Advanced deployment](advanced.md)
+- [Advanced deployment](020-advanced.md)
 
 ## Prerequisites
 
@@ -116,7 +116,7 @@ sequenceDiagram
     Auth->>User: Provide user access to deployed app
 ```
 
-We will start with [basic deployment](basic.md) in the first session, using
+We will start with [basic deployment](010-basic.md) in the first session, using
 [Ollama](https://ollama.com). If you're done with basic deployment before the break, you can proceed
-to the [advanced deployment](advanced.md) session, which introduces [Xorbits
+to the [advanced deployment](020-advanced.md) session, which introduces [Xorbits
 Inference](https://inference.readthedocs.io/en/latest/index.html).
