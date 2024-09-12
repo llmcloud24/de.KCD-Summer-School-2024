@@ -6,8 +6,8 @@
 ## what we have/need:
 
 - - [x] an nginx-proxy-manager vm that's connected to the loadbalancer
-  - [ ] create/using certs
+  - [x] create/using certs (certbot, or..?)
   - [x] show an upptime example (of anything, like google.com etc)
-  - [ ] show backup things: rsync, nfs share, cronjob
-  - [ ] adding an auth layer/image (oauth2-proxy or something) on top of their existing apps from Day 3
-  - [ ] show/make them do things via github repo
+  - [x] show backup things: rsync, nfs share, cronjob
+  - [x] adding an auth layer/image (oauth2-proxy or something) on top of their existing apps from Day 3 (requires validation)
+  - [x] show/make them do things via github repo
