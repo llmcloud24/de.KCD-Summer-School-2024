@@ -7,7 +7,7 @@
 
 - - [x] an nginx-proxy-manager vm that's connected to the loadbalancer
   - [x] create/using certs (idea: certbot to generate, add via npm gui?)
-  - [ ] Jakob WIP: setting up infrastructure for certification
+  - [x] Jakob WIP: setting up infrastructure for certification
   - [x] uptime monitoring (idea: show an upptime example of anything, like google.com etc, just to show the possibility)
   - [x] show backup things: rsync, nfs share, cronjob (idea: set up nfs, mount it, setup a cronjob to rsync a folder)
   - [x] adding an auth layer/image (oauth2-proxy or something) on top of their existing apps from Day 3 (wip: depends on whether we can get it working on Day 3's setup?)
