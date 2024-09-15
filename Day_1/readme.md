@@ -16,9 +16,9 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
 - try to login at the de.NBI Cloud Berlin dashboard: https://denbi-cloud.bihealth.org
 
 ## 2. How to deploy an vm:
-- create your pair of keys in the horizon dashboard: https://cloud.denbi.de/wiki/quickstart/#ssh-setup
-- upload your public key in the de.NBI cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
-- how to create your own vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#deploy-your-vms
+- Create your pair of keys in the horizon dashboard: https://cloud.denbi.de/wiki/quickstart/#ssh-setup
+- Upload your public key in the de.NBI cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
+- How to create your own vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#deploy-your-vms
   - you can choose to create VM with:
     - Details --> Instance Name: cloudvm-$yourName
     - Source --> create new Volume: yes and choose Image: Ubuntu-24.04-20240702
@@ -26,9 +26,9 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
     - Networks --> LLMcloud24-network-2
     - Key Pair --> add your own available Key Pair
 - Assign a floating ip from "public 2" pool to your VM
-- how to connect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
+- How to connect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
   - public key needs to be uploaded in cloud portal
-  - pulic key needs to be added during the creation of the vm
+  - pulic key needs to be added during the creation of the vm: https://cloud.denbi.de/wiki/quickstart/#floating-ip
   - you would need to setup a ProxyJump in order to connect to your own VM e.g. provide a configuration similar to this one:
   
 ```
