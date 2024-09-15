@@ -8,4 +8,4 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
   - A brief overview of the OpenStack concepts can be found here: https://cloud.denbi.de/wiki/Concept/basics/
   - A brief overview of the general OpenStack components can be found here: https://cloud.denbi.de/wiki/Concept/openstack/
 3. Specific Information about de.NBI Cloud site in Berlin: **https://cloud.denbi.de/wiki/Compute_Center/Berlin**
-  - how to coneect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
+  - how to connect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
