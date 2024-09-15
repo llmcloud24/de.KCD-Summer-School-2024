@@ -25,6 +25,7 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
     - Flavor --> de.NBI default
     - Networks --> LLMcloud24-network-2
     - Key Pair --> add your own available Key Pair
+- Assign a floating ip from "public 2" pool to your VM
 - how to connect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
   - public key needs to be uploaded in cloud portal
   - pulic key needs to be added during the creation of the vm
