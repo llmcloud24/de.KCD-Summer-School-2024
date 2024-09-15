@@ -43,5 +43,7 @@ Host {NAME_OF_VM}
     User {ubuntu / centos}
     ProxyJump denbi-jumphost-01.bihealth.org
 ```
-- how to add more storage to your vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#storage
-- how to use the openstack api: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#using-the-openstack-api
+## how to add more storage to your vm: 
+- https://cloud.denbi.de/wiki/Compute_Center/Berlin/#storage
+## how to use the openstack api: 
+- https://cloud.denbi.de/wiki/Compute_Center/Berlin/#using-the-openstack-api
