@@ -1,6 +1,6 @@
 # How to cloud
 
-Our first day will give you a short introduction to the setup of our OpenStack-Cloud, so you are prepared to start a virtual machine.
+Our first day will give you an introduction to the setup of our OpenStack Cloud, so you are prepared to start a virtual machine and work on your own project.
 
 1. Introduction to cloud portal: **https://cloud.denbi.de/portal**
   - explanation of the cloud portal: https://cloud.denbi.de/wiki/portal/allocation/
