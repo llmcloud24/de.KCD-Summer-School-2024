@@ -30,7 +30,7 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
   - pulic key needs to be added during the creation of the vm
   - you would need to setup a ProxyJump in order to connect to your own VM e.g. provide a configuration similar to this one:
   
-''' 
+```
 Host denbi-jumphost-01.bihealth.org
     HostName denbi-jumphost-01.bihealth.org
     User {LifeScienceLogin}
@@ -42,6 +42,6 @@ Host {NAME_OF_VM}
     IdentityFile {PATH_TO_KEY}
     User {ubuntu / centos}
     ProxyJump denbi-jumphost-01.bihealth.org
-''' 
+```
 - how to add more storage to your vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#storage
 - how to use the openstack api: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#using-the-openstack-api
