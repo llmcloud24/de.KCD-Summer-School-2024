@@ -15,7 +15,7 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
 - register via LifeScience AAI for de.NBI VO and join the project: LLMCloud24 via provided registration link
 - try to login at the de.NBI Cloud Berlin dashboard: https://denbi-cloud.bihealth.org
 
-### Deploy your first VM  
+### How to deploy an vm:
 - create your pair of keys in the horizon dashboard: https://cloud.denbi.de/wiki/quickstart/#ssh-setup
 - upload your public key in the de.NBI cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
 - how to create your own vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#deploy-your-vms
@@ -43,7 +43,7 @@ Host {NAME_OF_VM}
     User {ubuntu / centos}
     ProxyJump denbi-jumphost-01.bihealth.org
 ```
-## how to add more storage to your vm: 
+### How to add more storage to your vm: 
 - https://cloud.denbi.de/wiki/Compute_Center/Berlin/#storage
-## how to use the openstack api: 
+### How to use the openstack api: 
 - https://cloud.denbi.de/wiki/Compute_Center/Berlin/#using-the-openstack-api
