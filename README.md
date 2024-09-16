@@ -20,7 +20,7 @@ https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjNkYWY3N2ItOGQ1ZS00MjI4L
 If you have any questions, please write to: lisa.schaak@bih-charite.de 
 
 
-## Mo-Thu 10-12 and 13-15, Fr 10-13  
+## Program
 
 ### Day 0: Preparation
 
