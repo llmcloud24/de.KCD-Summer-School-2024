@@ -35,12 +35,12 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
 Host denbi-jumphost-01.bihealth.org
     HostName denbi-jumphost-01.bihealth.org
     User {LifeScienceLogin}
-    IdentityFile {PATH_TO_KEY}
+    IdentityFile {PATH_TO_PRIVATE_KEY}
     ServerAliveInterval 120
 
 Host {NAME_OF_VM}
     HostName {172.16.XXX.XXX}
-    IdentityFile {PATH_TO_KEY}
+    IdentityFile {PATH_TO_PRIVATE_KEY}
     User {ubuntu / centos}
     ProxyJump denbi-jumphost-01.bihealth.org
 ```
