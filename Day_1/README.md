@@ -32,6 +32,13 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
   - you would need to setup a ProxyJump in order to connect to your own VM e.g. provide a configuration similar to this one:
   
 ```
+## General info regarding Host entries:
+# Host <this can be any name you like>
+#     HostName <this must either be a domain or an ip>
+#     User {LifeScienceLogin}
+#     IdentityFile {PATH_TO_PRIVATE_KEY}
+#     ServerAliveInterval 120
+
 Host denbi-jumphost-01.bihealth.org
     HostName denbi-jumphost-01.bihealth.org
     User {LifeScienceLogin}
