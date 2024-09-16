@@ -1,14 +1,29 @@
-# What needs to be changed/done:
+# Day 4 - How to Service – Ensuring Continuous Support throughout Operations
 
-- - [ ] Remove our own LLM + GUI deployment
-- - [ ] Adapt our compose files to work with Day 3's
+Table of Contents:
 
-## what we have/need:
+- [Background](#background)
+- [Certification](#certification)
+- [Authentication](#authentication)
+- [Monitoring](#monitoring)
+- [Backups](#backups)
 
-- - [x] an nginx-proxy-manager vm that's connected to the loadbalancer
-  - [x] create/using certs (idea: certbot to generate, add via npm gui?)
-  - [x] Jakob WIP: setting up infrastructure for certification
-  - [x] uptime monitoring (idea: show an upptime example of anything, like google.com etc, just to show the possibility)
-  - [x] show backup things: rsync, nfs share, cronjob (idea: set up nfs, mount it, setup a cronjob to rsync a folder)
-  - [x] adding an auth layer/image (oauth2-proxy or something) on top of their existing apps from Day 3 (wip: depends on whether we can get it working on Day 3's setup?)
-  - [x] show/make them do things via github repo (idea: make them pull the scripts/templates from there, and make them commit their stuff as we go through the course?)
+## Background
+
+Ensuring continuous support throughout operations is crucial for maintaining the reliability, security, and efficiency of any system or service. This session we will discuss the key components that underpin robust operational support, including certification, authentication, monitoring, and backups. By understanding and implementing these elements effectively, organizations can minimize downtime, protect sensitive data, and provide seamless experiences for users.
+
+
+## Certification
+Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
+
+## Authentication
+
+Integrating robust authentication methods to prevent unauthorized access and enhance security to ensure that only authorized users can access critical systems and data.
+
+## Monitoring
+
+Ongoing monitoring of system and application performance, security, and infrastructure health enables early issue detection and swift resolution.
+
+## Backups
+
+Regular, secure backups following strategies to ensure that data can be restored after loss or corruption, maintaining operation continuity. Implementing automated backup solutions and storing backups in multiple locations safeguards against various failure scenarios and minimizes downtime.
