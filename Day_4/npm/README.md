@@ -1,14 +1,13 @@
 ## NPM Showcase
 
 > [!IMPORTANT]
-> Unfortunately, due to practicality and time reasons, we will not do a hands-on session for this.
-> 
-> Even if you manage to deploy this on your VM, the functionality will be limited in this context.
+> Unfortunately, due to practicality and time constraints, we will not do an in-depth hands-on session for this.
 > 
 > We recommend that you focus on the live showcase instead.
 > 
 > This example will still work, if you have more control over your infrastructure, and know what you're doing.
-
+>
+> Feel free to try and deploy it and see if you access the interface, but the functionality will be very limited.
 
 ### What is Nginx Proxy Manager (NPM)?
 
