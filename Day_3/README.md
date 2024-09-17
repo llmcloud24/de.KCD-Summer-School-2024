@@ -8,6 +8,8 @@ Table of Contents:
 
 - [Advanced deployment](020-advanced.md)
 
+- [Python clients](030-python-clients.md)
+
 ## Prerequisites
 
 You should be able to connect to your assigned VM from your machine, using an

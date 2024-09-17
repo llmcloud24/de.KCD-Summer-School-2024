@@ -17,6 +17,15 @@ available today. Give it a try:
 ollama run mapler/gpt2
 ```
 
+See if you can get the model to explain to you what the key messages of the 2017
+paper "Attention is all you need" are. Or how it responds to you saying "Hi!".
+
+> [!TIP]
+> For understanding the difference between legacy models like GPT-2 and the
+> conversational style of current models, we can look into advances in
+> *instruction fine-tuning* and *reinforcement learning from human feedback*;
+> see for example this [IBM blog post](https://www.ibm.com/topics/instruction-tuning).
+
 If we want to deploy a current state-of-the-art model, we can use the llama-3.1
 model instead. You can find it at the top of the model page, as it is currently
 by far the most popular model.
@@ -26,7 +35,8 @@ ollama run llama3.1
 ```
 
 Without specifying the exact model variant, Ollama will deploy the default for
-this model. 
+this model. I encourage you to try the same queries as with the GPT-2 model and
+see how the responses differ.
 
 > [!TIP]
 > As an exercise, find out which exact model variant is deployed by default
