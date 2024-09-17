@@ -39,23 +39,24 @@ deployment of the model using specific software.
 LLMs on a GPU-enabled machine, such as the cloud-based VMs you have created on
 Day 1.
 
-    - Ollama: A simple deployment tool with focus on ease of use.
+    - Ollama: A simple deployment tool with focus on ease of use. [Lection 1](010-basic.md)
 
     - Xorbits Inference: A more advanced deployment tool that allows you to
-    deploy custom models.
+    deploy custom models. [Lection 2](020-advanced.md)
 
 - Software for interfacing with the LLM: A Python package and more elaborate
 frontends that allow interfacing with the user to enable tasks that use the LLM.
 
     - Ollama CLI: Ollama comes with its own command-line interface that allows
-    quickly deploying and interacting with its models.
+    quickly deploying and interacting with its models. It also provides a Python
+    interface. [Lection 3](030-python-clients.md)
 
     - [BioChatter](https://biochatter.org): A Python package that allows you to
-    interface with the LLM using a Python shell.
+    interface with the LLM using a Python shell. [Lection 3](030-python-clients.md)
 
     - BioChatter Light: A Python-based frontend (made using
     [Streamlit](https://streamlit.io/)) that allows fast prototyping of web
-    applications.
+    applications. [Lection 4](040-web-app-pole.md)
 
     - BioChatter Next: A more elaborate frontend solution that uses a REST API
     based on [FastAPI](https://fastapi.tiangolo.com/) and a frontend based on
