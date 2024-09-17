@@ -30,7 +30,17 @@ bash Miniforge3-$(uname)-$(uname -m).sh
 ## Background
 
 In this session, we will talk about LLMs and how to deploy them in the cloud.
-The framework, including days 4 and 5, consists of the following components:
+A defining characteristic of working on cloud-based VMs is that you will do most
+of your work in the terminal. This is because cloud-based VMs are usually
+headless, meaning they do not have a graphical user interface. We will connect
+to the VM using SSH and interact with the LLM using the command line and Python
+REPL.
+
+Ultimately, we aim to deploy a web application for our users, as shown in the
+examples below. However, we will not be able to see this web application on our
+VMs before setting up a reverse proxy, which we will do on [Day 4](../Day_4).
+The remainder of the webinar, including days 4 and 5, consists of the following
+components:
 
 - The LLM: A collection of model weights from a public repository that allows
 deployment of the model using specific software.
@@ -61,6 +71,15 @@ frontends that allow interfacing with the user to enable tasks that use the LLM.
     - [BioChatter Next](https://next.biochatter.org): A more elaborate frontend solution that uses a REST API
     based on [FastAPI](https://fastapi.tiangolo.com/) and a frontend based on
     [Next.js](https://nextjs.org/). Not covered in this session.
+
+> [!NOTE]
+> BioChatter is our own work, designed to make the process of deploying LLMs
+> easier. Naturally, you can use frontend solutions of your choice, such as
+> [Streamlit](https://streamlit.io/), [Dash](https://dash.plotly.com/),
+> [FastAPI](https://fastapi.tiangolo.com/), or 
+> [OpenWebUI](https://openwebui.com). These all have different
+> levels of expressiveness and complexity, and you can choose the one that fits
+> your needs best.
 
 - Authentication and deployment layer (Day 4): A software layer that allows you
 to deploy your application to the internet and authenticate users. Briefly, this
