@@ -39,28 +39,28 @@ deployment of the model using specific software.
 LLMs on a GPU-enabled machine, such as the cloud-based VMs you have created on
 Day 1.
 
-    - Ollama: A simple deployment tool with focus on ease of use. [Lection 1](010-basic.md)
+    - Ollama: A simple deployment tool with focus on ease of use. Covered in [Lection 1](010-basic.md)
 
     - Xorbits Inference: A more advanced deployment tool that allows you to
-    deploy custom models. [Lection 2](020-advanced.md)
+    deploy custom models. Covered in [Lection 2](020-advanced.md)
 
 - Software for interfacing with the LLM: A Python package and more elaborate
 frontends that allow interfacing with the user to enable tasks that use the LLM.
 
-    - Ollama CLI: Ollama comes with its own command-line interface that allows
+    - [Ollama API](https://github.com/ollama/ollama-python): Ollama comes with its own command-line interface that allows
     quickly deploying and interacting with its models. It also provides a Python
-    interface. [Lection 3](030-python-clients.md)
+    interface. Covered in [Lection 3](030-python-clients.md)
 
     - [BioChatter](https://biochatter.org): A Python package that allows you to
-    interface with the LLM using a Python shell. [Lection 3](030-python-clients.md)
+    interface with the LLM using a Python shell. Covered in [Lection 3](030-python-clients.md)
 
     - [BioChatter Light](https://light.biochatter.org): A Python-based frontend (made using
     [Streamlit](https://streamlit.io/)) that allows fast prototyping of web
-    applications. [Lection 4](040-web-app-pole.md)
+    applications. Covered in [Lection 4](040-web-app-pole.md)
 
     - [BioChatter Next](https://next.biochatter.org): A more elaborate frontend solution that uses a REST API
     based on [FastAPI](https://fastapi.tiangolo.com/) and a frontend based on
-    [Next.js](https://nextjs.org/).
+    [Next.js](https://nextjs.org/). Not covered in this session.
 
 - Authentication and deployment layer (Day 4): A software layer that allows you
 to deploy your application to the internet and authenticate users. Briefly, this
@@ -116,6 +116,11 @@ sequenceDiagram
 ```
 
 We will start with [basic deployment](010-basic.md) in the first session, using
-[Ollama](https://ollama.com). If you're done with basic deployment before the break, you can proceed
-to the [advanced deployment](020-advanced.md) session, which introduces [Xorbits
-Inference](https://inference.readthedocs.io/en/latest/index.html).
+[Ollama](https://ollama.com). If you're done with basic deployment before the
+break, you can proceed to the [advanced deployment](020-advanced.md) session,
+which introduces [Xorbits
+Inference](https://inference.readthedocs.io/en/latest/index.html). After the
+break, we will continue to [connecting to LLMs from Python
+clients](030-python-clients.md) and finally have a brief look at [web
+application composition and deployment](040-web-app-pole.md) in preparation for
+Day 4.
