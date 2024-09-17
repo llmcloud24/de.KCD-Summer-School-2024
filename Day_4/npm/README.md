@@ -7,7 +7,7 @@
 > 
 > This example will still work, if you have more control over your infrastructure, and know what you're doing.
 >
-> Feel free to try and deploy it and see if you access the interface, but the functionality will be very limited.
+> Feel free to try and deploy it and see if you can access the interface, but do anticipate that things might not work properly.
 
 ### What is Nginx Proxy Manager (NPM)?
 
