@@ -10,15 +10,15 @@ services:
       - --http-address
       - 0.0.0.0:4180
     environment:
-      OAUTH2_PROXY_CLIENT_ID: '<from github oauth>'
-      OAUTH2_PROXY_CLIENT_SECRET: '<from github oauth>'
+      OAUTH2_PROXY_CLIENT_ID: ${OAUTH2_PROXY_CLIENT_ID}
+      OAUTH2_PROXY_CLIENT_SECRET: ${OAUTH2_PROXY_CLIENT_SECRET}
       OAUTH2_PROXY_COOKIE_REFRESH: 30m
-      OAUTH2_PROXY_COOKIE_SECRET: '<self defined, 32 chars?>'
+      OAUTH2_PROXY_COOKIE_SECRET: ${OAUTH2_PROXY_COOKIE_SECRET}
       OAUTH2_PROXY_EMAIL_DOMAINS: '*'
       OAUTH2_PROXY_PROVIDER: github
       OAUTH2_PROXY_PROVIDER_DISPLAY_NAME: GitHub
-      OAUTH2_PROXY_REDIRECT_URL: http://172.17.0.219/oauth2/callback
-      OAUTH2_PROXY_COOKIE_SECURE: "false" # Disable secure cookies if not using HTTPS
+      OAUTH2_PROXY_REDIRECT_URL: https://foooauth.llmcloud24.bihealth.org/oauth2/callback
+      OAUTH2_PROXY_COOKIE_SECURE: "true" # Disable secure cookies if not using HTTPS
       OAUTH2_PROXY_SET_XAUTHREQUEST: "true"
       OAUTH2_PROXY_PASS_USER_HEADERS: "true"
       OAUTH2_PROXY_PASS_ACCESS_TOKEN: "true"
@@ -46,7 +46,7 @@ services:
       - ollama-docker
 
   ollama-webui:
-    image: ghcr.io/open-webui/open-webui:main
+    image: ghcr.io/open-webui/open-webui:latest
     container_name: ollama-webui
     volumes:
       - ./ollama/ollama-webui:/app/backend/data
@@ -54,12 +54,12 @@ services:
       - ollama
     ports:
       - 8080:8080
-    environment:
-      - OLLAMA_BASE_URLS=http://host.docker.internal:7869 #comma separated ollama hosts
+    environment: # https://docs.openwebui.com/getting-started/env-configuration#default_models
+      - OLLAMA_BASE_URLS=http://10.0.2.137:7869 #comma separated ollama hosts
       - ENV=prod
       - WEBUI_AUTH=False
       - WEBUI_URL=http://localhost:8080
-      - WEBUI_SECRET_KEY=abc-1x2y3z
+      - WEBUI_SECRET_KEY=<secret>
       - ENABLE_OAUTH_SIGNUP=true
       - OAUTH_MERGE_ACCOUNTS_BY_EMAIL=true
       - WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email
