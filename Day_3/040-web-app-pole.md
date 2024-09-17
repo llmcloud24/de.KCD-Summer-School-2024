@@ -20,7 +20,7 @@ Knowledge Graph. This is similar in configuration to the BioChatter Light cancer
 genetics use case ([DECIDER Light](https://decider-light.biochatter.org)).
 
 ```mermaid
-graph TD
+graph LR
     A[Raw data] --> B[Knowledge Graph]
     B --> C[Neo4j Import]
     C --> D[Neo4j Deployment]
