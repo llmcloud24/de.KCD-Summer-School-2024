@@ -123,4 +123,4 @@ Inference](https://inference.readthedocs.io/en/latest/index.html). After the
 break, we will continue to [connecting to LLMs from Python
 clients](030-python-clients.md) and finally have a brief look at [web
 application composition and deployment](040-web-app-pole.md) in preparation for
-Day 4.
+[Day 4](../Day_4).
