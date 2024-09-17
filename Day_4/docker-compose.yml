@@ -61,6 +61,7 @@ services:
       - WEBUI_URL=http://localhost:8080
       - WEBUI_SECRET_KEY=<secret>
       - ENABLE_OAUTH_SIGNUP=true
+      - DEFAULT_USER_ROLE=user
       - OAUTH_MERGE_ACCOUNTS_BY_EMAIL=true
       - WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email
       - WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User
