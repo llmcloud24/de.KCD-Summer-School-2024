@@ -8,7 +8,9 @@ Table of Contents:
 
 - [Advanced deployment](020-advanced.md)
 
-- [Python clients](030-python-clients.md)
+- [Connecting from Python clients](030-python-clients.md)
+
+- [Web application composition and deployment](040-web-app-pole.md)
 
 ## Prerequisites
 
