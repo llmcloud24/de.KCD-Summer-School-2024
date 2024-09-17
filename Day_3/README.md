@@ -54,11 +54,11 @@ frontends that allow interfacing with the user to enable tasks that use the LLM.
     - [BioChatter](https://biochatter.org): A Python package that allows you to
     interface with the LLM using a Python shell. [Lection 3](030-python-clients.md)
 
-    - BioChatter Light: A Python-based frontend (made using
+    - [BioChatter Light](https://light.biochatter.org): A Python-based frontend (made using
     [Streamlit](https://streamlit.io/)) that allows fast prototyping of web
     applications. [Lection 4](040-web-app-pole.md)
 
-    - BioChatter Next: A more elaborate frontend solution that uses a REST API
+    - [BioChatter Next](https://next.biochatter.org): A more elaborate frontend solution that uses a REST API
     based on [FastAPI](https://fastapi.tiangolo.com/) and a frontend based on
     [Next.js](https://nextjs.org/).
 
