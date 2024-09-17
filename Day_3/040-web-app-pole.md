@@ -19,6 +19,14 @@ and to show only one particular tab, the one that allows interaction with the
 Knowledge Graph. This is similar in configuration to the BioChatter Light cancer
 genetics use case ([DECIDER Light](https://decider-light.biochatter.org)).
 
+```mermaid
+graph TD
+    A[Raw data] --> B[Knowledge Graph]
+    B --> C[Neo4j Import]
+    C --> D[Neo4j Deployment]
+    D --> E[Streamlit Frontend]
+```
+
 > [!NOTE]
 > The configuration of BioChatter light, including the LLM deployment and the
 > shown tabs, is done in the environment. While this can be done in several
