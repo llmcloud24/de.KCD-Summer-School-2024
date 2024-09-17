@@ -2,11 +2,11 @@
 
 Table of Contents:
 
-- [Background](#background)
+- [Background (this README)](#background)
 
-- [Basic deployment](010-basic.md)
+- [Basic deployment - Ollama](010-basic.md)
 
-- [Advanced deployment](020-advanced.md)
+- [Advanced deployment - Xorbits Inference](020-advanced.md)
 
 - [Connecting from Python clients](030-python-clients.md)
 
