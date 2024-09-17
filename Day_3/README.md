@@ -2,15 +2,15 @@
 
 Table of Contents:
 
-- [Background (this README)](#background)
+- [0 Background (this README)](#background)
 
-- [Basic deployment - Ollama](010-basic.md)
+- [1 Basic deployment - Ollama](010-basic.md)
 
-- [Advanced deployment - Xorbits Inference](020-advanced.md)
+- [2 Advanced deployment - Xorbits Inference](020-advanced.md)
 
-- [Connecting from Python clients](030-python-clients.md)
+- [3 Connecting from Python clients](030-python-clients.md)
 
-- [Web application composition and deployment](040-web-app-pole.md)
+- [4 Web application composition and deployment](040-web-app-pole.md)
 
 ## Prerequisites
 
@@ -25,12 +25,6 @@ Anaconda, by running the following commands:
 ```bash
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 bash Miniforge3-$(uname)-$(uname -m).sh
-```
-
-Similarly, [Poetry](https://python-poetry.org) can be installed like this:
-
-```bash
-curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 ## Background
