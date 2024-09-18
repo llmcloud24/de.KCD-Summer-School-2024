@@ -29,4 +29,4 @@
 
 * If you cloned our Summer School repository, you can `cd` into the `Day_4/03-Certification` folder
 * Then run `docker compose up --build` and it should work out of the box
-* You can then access it on `SOMETHING.llmcloud24.bihealth.org:81` with the user `admin@example.com` and password `changeme`
+* You can then access the web page in your browser with the SOCKS proxy at `<your VM's IP>:81` with the user `admin@example.com` and password `changeme`
