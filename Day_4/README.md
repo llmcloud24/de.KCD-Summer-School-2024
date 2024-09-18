@@ -13,6 +13,10 @@ Table of Contents:
 
 Ensuring continuous support throughout operations is crucial for maintaining the reliability, security, and efficiency of any system or service. This session we will discuss the key components that underpin robust operational support, including certification, authentication, monitoring, and backups. By understanding and implementing these elements effectively, organizations can minimize downtime, protect sensitive data, and provide seamless experiences for users.
 
+## General Project setup
+
+![alt text](images/llmcloud24.png)
+
 
 ## Deploying ollama with docker setup
 
