@@ -23,7 +23,9 @@ Participants to review the Bio Chatter preprint and documentation for more infor
 Lena to explore the Bio Chatter framework for potential use in their own text-to-query system.
 Participants to consider strategic approaches for LLM development, focusing on areas not heavily pursued by large tech companies.
 Participants to experiment with few-shot learning as an alternative to fine-tuning for specific use cases.
-Summary
+
+## Summary
+
 Breakout Rooms, Zoom Link, and Lunch Break Discussion
 
 Sebastian created three breakout rooms for participants to choose from. He also sent the Zoom link to Lisa via email and chat. There was a discussion about the lunch break and the need to use RP credentials. Martin checked his microphone, and Lisa confirmed that she could hear everything. The team also discussed the possibility of Peter joining the meeting.
