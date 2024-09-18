@@ -22,10 +22,15 @@ An overview of the planned project setup
 
 ## Deploying ollama with docker setup
 
-How to run a model now inside the container e.g.
+Deploy ollama withou Oauth authentication
 
 ```
-docker exec -it ollama ollama run llama2
+sudo docker compose -f docker-compose-noauth.yml up
+```
+
+How to run a model now inside the container e.g.
+```
+sudo docker exec -it ollama ollama run llama2
 ```
 
 ## 1 Monitoring
