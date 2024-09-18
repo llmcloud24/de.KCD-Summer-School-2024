@@ -13,7 +13,7 @@ Table of Contents:
 
 Ensuring continuous support throughout operations is crucial for maintaining the reliability, security, and efficiency of any system or service. This session we will discuss the key components that underpin robust operational support, including certification, authentication, monitoring, and backups. By understanding and implementing these elements effectively, organizations can minimize downtime, protect sensitive data, and provide seamless experiences for users.
 
-## General Project setup
+## 1 General Project setup
 
 ![alt text](images/llmcloud24.png)
 
@@ -26,20 +26,23 @@ How to run a model now inside the container e.g.
 docker exec -it ollama ollama run llama2
 ```
 
-## Certification
-Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
-
-## Authentication
-
-Integrating robust authentication methods to prevent unauthorized access and enhance security to ensure that only authorized users can access critical systems and data.
-
-## Monitoring
+## 2 Monitoring
 
 Ongoing monitoring of system and application performance, security, and infrastructure health enables early issue detection and swift resolution.
 
-## Backups
+## 3 Backups
 
 Regular, secure backups following strategies to ensure that data can be restored after loss or corruption, maintaining operation continuity. Implementing automated backup solutions and storing backups in multiple locations safeguards against various failure scenarios and minimizes downtime.
+
+## 4 Certification
+Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
+
+## 5 Authentication
+
+Integrating robust authentication methods to prevent unauthorized access and enhance security to ensure that only authorized users can access critical systems and data.
+
+![alt text](images/Github-Oauth.png)
+
 
 ## Socks Proxy
 
