@@ -59,6 +59,11 @@ A SOCKS proxy (Socket Secure) is an internet protocol that routes network traffi
 
 In our case we use a SOCKS5 proxy to reach an internal network. The connection to the internal netwok can then be used by the browser to show web pages that are not reacheable from the internet but only from inside the de.NBI cloud. 
 
+Basically, you need 3 things:
+1. A new entry in your ssh config file with DynamicForward
+2. Set up your browser to utilize this proxy
+3. An active SSH session to this newly added host
+
 ### Setup
 
 The proxy server in this case is created on the local machine or 'localhost'. To establish the SOCKS5 proxy a ssh connection with a specific port is created. To use the connection the browser proxy settings must be changed to use 'localhost' on the port defined in the ssh connection as a SOCKS5 proxy. Now the browser (client) can connect to the server in the de.NBI cloud.
@@ -75,6 +80,9 @@ Host de.NBI-socks-proxy
 ```
 
 Entry in the ssh config.
+
+>[!IMPORTANT]
+>You need to keep an active SSH session to this host for this to work.
 
 ### Browser settings
 
