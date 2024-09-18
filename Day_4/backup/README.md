@@ -91,7 +91,7 @@ Once you're ready, you can try to make backups of this folder and its files to y
 >The `rsync` command is a fancier way to copy or `cp` files, and you get to see the progress while this is being done.
 
 Now you've created some copies of your data. Let's try to find out a little bit more about them:
-```
+```bash
 # check the original size of our folder
 $ du -sh ~/llmcloud24_toy_data/
 10M	/home/ubuntu/llmcloud24_toy_data/
@@ -112,9 +112,58 @@ $ du -sh /nfs/llmcloud24_toy_data.tar
 >Interestingly, they seem to differ in size, even though they're supposed to be copies!
 >Do you know why? Is there something wrong?
 
-```
+One standardized way to verify whether two files are identical is to calculate and compare their checksums.
+This can be done using the `md5sum` command for example:
+```bash
 $ md5sum ~/llmcloud24_toy_data.tar 
 87443e0c6129f374d846a532e01bf9ec  /home/ubuntu/llmcloud24_toy_data.tar
+
 $ md5sum /nfs/llmcloud24_toy_data.tar 
 87443e0c6129f374d846a532e01bf9ec  /nfs/llmcloud24_toy_data.tar
 ```
+The identical hash indicates that our backup `.tar` file is identical to the original, which is good news! The size differences are due to how the file systems handle storage.
+
+
+### Hands-on: Using Date and Time in Backups
+
+So far, our simple backup solution would work for simple things. But what if your files are changing every day, and you want to preserve each of them separately? And of course you would like to be able to find the correct one when you want to restore them. Incorporating the current date and time information into your backup filenames helps in versioning and easy identification.
+
+```bash
+# Use the output of `date` command in your backup filename
+tar -cvf "/nfs/llmcloud24_toy_data_$(date).tar" ~/llmcloud24_toy_data
+
+# List backups in /nfs
+ls -lah /nfs/
+
+# You should see a file like llmcloud24_toy_data_20231005_143000.tar
+```
+
+### Hands-on: Automating Backups with Cron Jobs
+
+Automate your backups to run at scheduled intervals using cron.
+
+crontab -e
+Add a Cron Job
+Add the following line to schedule a daily backup at 2 AM:
+
+0 2 * * * tar -cvf "/nfs/llmcloud24_toy_data_$(date +\%Y\%m\%d).tar" ~/llmcloud24_toy_data >/dev/null 2>&1
+
+Explanation:
+0 2 * * *: Runs at 2:00 AM every day.
+>/dev/null 2>&1: Suppresses output and errors.
+Save and Exit
+Press Ctrl+O, then Enter to save.
+Press Ctrl+X to exit.
+
+>[!TIP]
+>If you see something like this when you run `sudo crontab -e` for the first time, just type `1` and press `Enter`.
+```sudo crontab -e
+no crontab for root - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]:```
