@@ -1,6 +1,6 @@
 # Checklist how to operate a service
 
-0. **Define responsibilites**
+0. **Define responsibilities**
    - [ ] Who will be responsible to keep the service running?
    - [ ] Who will be the backup of this person?
 
