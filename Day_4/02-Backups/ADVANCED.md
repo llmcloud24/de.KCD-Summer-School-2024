@@ -13,4 +13,5 @@ Now you can apply everything you've learned and experienced, and try to accompli
 - [ ] Automated restoration of these services, along with the data
 - [ ] Monitoring for all these steps
   - [ ] Bonus: active monitoring with alerts and notifications
+- [ ] Bonus: isolate these steps to happen independently and not in the same VMs
 - [ ] Ultimate bonus: completely automate the whole VM and resources creation + services deployment + backups/restores/monitoring
