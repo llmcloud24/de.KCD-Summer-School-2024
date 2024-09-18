@@ -22,7 +22,7 @@ An overview of the planned project setup
 
 ## Deploying ollama with docker setup
 
-Deploy ollama withou Oauth authentication
+Deploy ollama with Docker without Github Oauth authentication
 
 ```
 sudo docker compose -f docker-compose-noauth.yml up
