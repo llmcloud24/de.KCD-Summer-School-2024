@@ -18,3 +18,12 @@ If you intend to do this yourself, you will need the following things:
  - After this, you will get a **Client secrets**, make sure you note this down somewhere, or it will disappear!
  - You can also find your **Client ID** on the same page, you need both of these.
  - In addition, generate a **cookie secret** that we will use later, so note it down somewhere: `openssl rand -hex 16`
+
+Next, make a new file called `llm.env` in the `llm` folder. You can do so via `nano llm.ev` when you're inside the `llm` folder.
+
+The content of this file will look like this, using the 3 things that you prepared in the Pre-requisites steps. Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
+```bash
+OAUTH2_PROXY_CLIENT_ID=somethingsomething
+OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
+OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
+```
