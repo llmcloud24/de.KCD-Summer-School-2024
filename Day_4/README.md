@@ -68,4 +68,4 @@ You can also add an extension like the "Proxy Switcher and Manager" to the brows
 With the extension installed you can setup multiple configurations for each connection you want to have and change the proxy settings by clicking on the correct tab. The default tab is 'System Proxy', when selected the browser will use the global proxy settings from the operating system. The tab for using the SOCKS proxy is 'Manual Proxy'.
 Give the ip address of localhos 127.0.0.1 and fill in the port of the ssh connection, 4321. Select 'SOCKS v5' as 'Server Type'. Give the connection a recognizable name and save it by clicking on the green checkmark.
 
-![browser extenion setup](images/proxy_browser_setup.png)
+![browser extenion setup](images/proxy_browser_extension_setup.png)
