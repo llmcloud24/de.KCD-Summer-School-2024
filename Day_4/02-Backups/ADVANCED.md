@@ -1,4 +1,6 @@
-## Challenge for Advanced Users
+## Day 4: Backups
+
+### Challenge for Advanced Users
 
 By now, you are able to deploy and run different kinds of services, like Ollama and Pole for example.
 
