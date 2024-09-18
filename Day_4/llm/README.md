@@ -27,3 +27,5 @@ OAUTH2_PROXY_CLIENT_ID=somethingsomething
 OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
 OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
 ```
+
+Then you could `source llm.env` before running `docker compose`
