@@ -1,4 +1,4 @@
-## Day 4: Web App Example: Open WebUI + Ollama
+## Day 4: Web App Example: OAuth + Open WebUI + Ollama
 
 ### What is happening here?
 
