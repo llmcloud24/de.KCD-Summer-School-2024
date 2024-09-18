@@ -47,7 +47,7 @@ In our case we use a SOCKS5 proxy to reach an internal network. The connection t
 
 ### Setup
 
-The proxy server in this case is created on the local machine or 'localhost'. To establish the SOCKS5 proxy a ssh connection with a specific port is created. To use the connection the browser proxy settings must be changed to use 'localhost' on the port defined in the ssh connection as a SOCKS5 proxy. Now the browser as the client can connect to the server in the de.NBI cloud.
+The proxy server in this case is created on the local machine or 'localhost'. To establish the SOCKS5 proxy a ssh connection with a specific port is created. To use the connection the browser proxy settings must be changed to use 'localhost' on the port defined in the ssh connection as a SOCKS5 proxy. Now the browser (client) can connect to the server in the de.NBI cloud.
 
 ### SSH config
 
@@ -69,7 +69,7 @@ The easiest way to setup the proxy in the browser is by changing the browser set
 
 ![Browser proxy settings](images/browser-socks-proxy.png)
 
-You can also add an extension like the "Proxy Switcher and Manager" to the browser. This extension should work with chrome/edge/firefox.
+You can also add an extension like the "Proxy Switcher and Manager" to the browser. This extension should work with [chrome](https://chromewebstore.google.com/detail/proxy-switcher-and-manage/onnfghpihccifgojkpnnncpagjcdbjod), [edge](https://microsoftedge.microsoft.com/addons/detail/proxy-switcher-and-manage/gneeeeckemnjlgopgpchamgmfpkglgaj) and [firefox](https://addons.mozilla.org/en-US/firefox/addon/proxy-switcher-and-manager/).
 
 ![browser extension](images/proxy_browser_extension.png)
 
