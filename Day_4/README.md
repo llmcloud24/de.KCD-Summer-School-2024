@@ -44,7 +44,7 @@ Integrating robust authentication methods to prevent unauthorized access and enh
 ![alt text](images/Github-Oauth.png)
 
 
-## Socks Proxy
+## How to access internal Network with Socks Proxy
 
 A SOCKS proxy (Socket Secure) is an internet protocol that routes network traffic between a client and a server via a proxy server. Unlike traditional proxies, SOCKS operates at the transport layer, handling any type of traffic, such as HTTP, FTP, and SMTP. It offers more flexibility, as it doesn’t interpret or modify network traffic, making it suitable for a wide range of applications, including web browsing, file transfers, and peer-to-peer networks. SOCKS5, the latest version, adds support for authentication and UDP traffic, improving security and performance for various use cases.
 
