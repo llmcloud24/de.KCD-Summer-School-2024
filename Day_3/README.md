@@ -14,6 +14,9 @@ Table of Contents:
 
 ## Prerequisites
 
+>[!NOTE]
+>Please create a GPU VM using the `de.NBI GPU T4 medium` flavour and `Ubuntu-24.04-20240913-gpu` image for your VM.
+
 You should be able to connect to your assigned VM from your machine, using an
 SSH client. The machine should run Ubuntu and have access to the internet, as
 well as Conda, Python, and Docker.
