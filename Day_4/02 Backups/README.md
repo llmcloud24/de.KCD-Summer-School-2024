@@ -129,7 +129,7 @@ The identical hash indicates that our backup `.tar` file is identical to the ori
 So far, our simple backup solution would work for simple things. But what if your files are changing every day, and you want to preserve each of them separately? And of course you would like to be able to find the correct one when you want to restore them. Incorporating the current date and time information into your backup filenames helps in versioning and easy identification.
 
 ```bash
-# Use the output of `date` command in your backup filename
+# Use the output of `date` command in your 02 Backups filename
 tar -cvf "/nfs/llmcloud24_toy_data_$(date).tar" ~/llmcloud24_toy_data
 
 # List backups in /nfs
