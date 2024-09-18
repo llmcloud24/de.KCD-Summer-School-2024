@@ -56,7 +56,6 @@ Host de.NBI-socks-proxy
     HostName denbi-jumphost-01.bihealth.org
     User jakobmathis
     IdentityFile ~/.ssh/privkey.key
-    ForwardAgent yes
     DynamicForward 127.0.0.1:4321
     ServerAliveInterval 120
 ```
