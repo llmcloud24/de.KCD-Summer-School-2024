@@ -14,6 +14,14 @@ Table of Contents:
 Ensuring continuous support throughout operations is crucial for maintaining the reliability, security, and efficiency of any system or service. This session we will discuss the key components that underpin robust operational support, including certification, authentication, monitoring, and backups. By understanding and implementing these elements effectively, organizations can minimize downtime, protect sensitive data, and provide seamless experiences for users.
 
 
+## Deploying ollama with docker setup
+
+How to run a model now inside the container e.g.
+
+```
+docker exec -it ollama ollama run llama2
+```
+
 ## Certification
 Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
 
