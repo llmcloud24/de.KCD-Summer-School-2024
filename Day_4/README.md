@@ -7,6 +7,7 @@ Table of Contents:
 - [Authentication](#authentication)
 - [Monitoring](#monitoring)
 - [Backups](#backups)
+- [SOCKS proxy](#socks-proxy)
 
 ## Background
 
@@ -27,3 +28,33 @@ Ongoing monitoring of system and application performance, security, and infrastr
 ## Backups
 
 Regular, secure backups following strategies to ensure that data can be restored after loss or corruption, maintaining operation continuity. Implementing automated backup solutions and storing backups in multiple locations safeguards against various failure scenarios and minimizes downtime.
+
+## Socks Proxy
+
+A SOCKS proxy (Socket Secure) is an internet protocol that routes network traffic between a client and a server via a proxy server. Unlike traditional proxies, SOCKS operates at the transport layer, handling any type of traffic, such as HTTP, FTP, and SMTP. It offers more flexibility, as it doesn’t interpret or modify network traffic, making it suitable for a wide range of applications, including web browsing, file transfers, and peer-to-peer networks. SOCKS5, the latest version, adds support for authentication and UDP traffic, improving security and performance for various use cases.
+
+### Introduction
+
+In our case we use a SOCKS5 proxy to reach an internal network. The connection to the internal netwok can then be used by the browser to show web pages that are not reacheable from the internet but only from inside the de.NBI cloud. 
+
+### Setup
+
+The proxy server in this case is created on the local machine or 'localhost'. To establish the SOCKS5 proxy a ssh connection with a specific port is created. To use the connection the browser proxy settings must be changed to use 'localhost' on the port defined in the ssh connection as a SOCKS5 proxy. Now the browser as the client can connect to the server in the de.NBI cloud.
+
+### SSH config
+
+```config
+Host de.NBI-socks-proxy
+    HostName denbi-jumphost-01.bihealth.org
+    User jakobmathis
+    IdentityFile ~/.ssh/privkey.key
+    ForwardAgent yes
+    DynamicForward 127.0.0.1:4321
+    ServerAliveInterval 120
+```
+
+Entry in the ssh config.
+
+### Browser settings
+
+![Browser proxy settings](images/browser-socks-proxy.png)
