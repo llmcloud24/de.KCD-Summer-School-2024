@@ -27,7 +27,7 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
     - Key Pair --> add your own available Key Pair
 - Assign a floating ip from "public 2" pool to your VM
 - How to connect to your vm with ssh: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#connect-to-your-vms-with-ssh
-  - public key needs to be uploaded in cloud portal
+  - public key needs to be uploaded in cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
   - pulic key needs to be added during the creation of the vm: https://cloud.denbi.de/wiki/quickstart/#floating-ip
   - you would need to setup a ProxyJump in order to connect to your own VM e.g. provide a configuration similar to this one:
   
