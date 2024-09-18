@@ -13,6 +13,8 @@ Pay attention to the screenshots and steps below!
 
 ### What is happening here?
 
+When you visit the demo page, you will reach the Nginx service. This Nginx service will then forward you to the oauth2-proxy service, which presents you with the choice to access our Open WebUI web service behind the gates via GitHub login. The oauth2-proxy will let GitHub handle the user authentication process and pass on the results to our Open WebUI service.
+
 ### How do we deploy them?
 
 #### Pre-requisites:
@@ -32,9 +34,13 @@ Next, make a new file called `llm.env` in the `llm` folder. You can do so via `n
 
 The content of this file will look like this, using the 3 things that you prepared in the Pre-requisites steps. Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
 ```bash
+MY_ANIMAL=just_your_animal_name_for_the_domain
+OLLAMA_IP=your_ollama_vm_internal_ip_10.X.X.X:PORT
 OAUTH2_PROXY_CLIENT_ID=somethingsomething
 OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
 OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
 ```
+>[!TIP]
+>You can use our Ollama if you don't want to use yours by changing the relevant line: `OLLAMA_IP=10.0.2.137:7869`
 
-Then you could `source llm.env` before running `docker compose`
+Then you could do `source llm.env` before running `docker compose`.
