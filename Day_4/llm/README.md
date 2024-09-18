@@ -12,8 +12,8 @@ If you intend to do this yourself, you will need the following things:
  - Request a subdomain for your VM from one of the BIH people
  - Create a New GitHub OAuth App here: https://github.com/settings/developers with the following settings:
    - Application Name: can be anything you want
-   - Homepage URL: `https://SOMETHING.llmcloud24.bihealth.org/`
-   - Authorization callback URL: `https://SOMETHING.llmcloud24.bihealth.org/oauth2/callback`
+   - Homepage URL: `https://$yourAnimal.llmcloud24.bihealth.org/`
+   - Authorization callback URL: `https://$yourAnimal.llmcloud24.bihealth.org/oauth2/callback`
    - You can leave the **Enable Device Flow** unchecked
  - After this, you will get a **Client secrets**, make sure you note this down somewhere, or it will disappear!
  - You can also find your **Client ID** on the same page, you need both of these.
