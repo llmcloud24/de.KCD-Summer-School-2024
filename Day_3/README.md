@@ -27,6 +27,9 @@ curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mi
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
+>[!TIP]
+>If you're using the `Ubuntu-24.04-20240913-gpu` image for your VM, the Conda installer is already included in the `ubuntu` user's home folder: `/home/ubuntu/Miniforge3-Linux-x86_64.sh`.
+
 ## Background
 
 In this session, we will talk about LLMs and how to deploy them in the cloud.
