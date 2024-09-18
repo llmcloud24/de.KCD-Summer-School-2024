@@ -1,4 +1,6 @@
-## NPM Showcase
+## Day 4: Certification
+
+### Nginx Proxy Manager Showcase
 
 > [!IMPORTANT]
 > Unfortunately, due to practicality and time constraints, we will not do an in-depth hands-on session for this.

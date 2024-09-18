@@ -2,6 +2,15 @@
 
 We have an example set up that you can visit here: https://foooauth.llmcloud24.bihealth.org/
 
+Pay attention to the screenshots and steps below!
+
+![OAuth2 Proxy](../images/04-auth-1.png)
+![Login using GitHub](../images/04-auth-2.png)
+
+>[!IMPORTANT]
+>Pay attention to grant access to the llmcloud24 organization before clicking the green Authorize button!
+![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3.png)
+
 ### What is happening here?
 
 ### How do we deploy them?

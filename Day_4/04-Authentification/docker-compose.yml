@@ -17,7 +17,7 @@ services:
       OAUTH2_PROXY_EMAIL_DOMAINS: '*'
       OAUTH2_PROXY_PROVIDER: github
       OAUTH2_PROXY_PROVIDER_DISPLAY_NAME: GitHub
-      OAUTH2_PROXY_REDIRECT_URL: https://foooauth.llmcloud24.bihealth.org/oauth2/callback
+      OAUTH2_PROXY_REDIRECT_URL: https://${YOUR_ANIMAL}.llmcloud24.bihealth.org/oauth2/callback
       OAUTH2_PROXY_COOKIE_SECURE: "true" # Disable secure cookies if not using HTTPS
       OAUTH2_PROXY_SET_XAUTHREQUEST: "true"
       OAUTH2_PROXY_PASS_USER_HEADERS: "true"
@@ -70,24 +70,3 @@ services:
     restart: unless-stopped
     networks:
       - ollama-docker
-
-  ollama:
-    volumes:
-      - ./ollama/ollama:/root/.ollama
-    container_name: ollama
-    tty: true
-    restart: unless-stopped
-    image: ollama/ollama:latest
-    ports:
-      - 7869:11434
-    environment:
-      - OLLAMA_KEEP_ALIVE=24h
-    networks:
-     - ollama-docker
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              device_ids: ['all']
-              capabilities: [gpu]
