@@ -39,6 +39,12 @@ $ curl localhost:8080 | grep "<title>"
     0 --:--:-- --:--:-- --:--:-- 1166k
 ```
 
+>[!IMPORTANT]
+>If you plan to continue with the OAuth set up that uses `docker-compose-oauth.yml` it's important that you do this:
+> - run `docker compose -f docker-compose-webui.yml down` to remove the containers
+> - make sure to also run `sudo rm -rf ollama` to remove this `ollama` folder created by the webgui during your attempts!
+> - make sure you do these before moving on to the OAuth steps!!
+
 Stay tuned and look into the SOCKS proxy setup session and instructions if you want to use this interface via your browser!
 
 ### Background on what we expect:
