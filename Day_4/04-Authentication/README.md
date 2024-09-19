@@ -28,7 +28,7 @@ Save the file, and then do `source .env`, this will load the variables we just d
 
 Then you can do `docker compose -f docker-compose-webui.yml up --build` to get your own Open WebUI service running.
 
-To quickly check if it's running, you can do `curl localhost:8080 | grep "<title>".
+To quickly check if it's running, you can do `curl localhost:8080 | grep "<title>"`.
 
 If you see something like this, then it should be working:
 ```bash
