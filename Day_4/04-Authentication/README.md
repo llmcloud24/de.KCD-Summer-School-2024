@@ -4,13 +4,11 @@ Before we proceed with the Authentication part, let's just have a mini hands-on 
 
 First, open the  `.env` in the `04-Authentication` folder. You can do so via `nano .env` when you're inside the folder.
 
-The content of this file will look like this. Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
+The content of this file will look like this. Let's focus only on the first 2 lines. Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
 ```bash
 MY_ANIMAL=just_your_animal_name_for_the_domain
 OLLAMA_IP=your_ollama_vm_internal_ip_10.X.X.X:PORT
-OAUTH2_PROXY_CLIENT_ID=somethingsomething
-OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
-OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
+... ignore the rest for now ...
 ```
 For now let's just focus on line 2: `OLLAMA_IP=your_ollama_vm_internal_ip_10.X.X.X:PORT`. Change this to the `INTERNAL_IP:PORT` of the VM with Ollama running.
 
@@ -43,26 +41,7 @@ $ curl localhost:8080 | grep "<title>"
 
 Stay tuned and look into the SOCKS proxy setup session and instructions if you want to use this interface via your browser!
 
-
-
-## Day 4: Web App Example: OAuth + Open WebUI + Ollama
-
-We have an example set up that you can visit here: https://foooauth.llmcloud24.bihealth.org/
-
-# Pay attention to the screenshots and steps below!! Do not mess this up!!
-
-# Step 1
-![OAuth2 Proxy](../images/04-auth-1.png)
-
-# Step 2
-![Login using GitHub](../images/04-auth-2.png)
-
-# Step 3 and 4: Two things happening here!! GRANT and only then AUTHORIZE!!
->[!IMPORTANT]
->Pay attention to grant access to the llmcloud24 organization before clicking the green Authorize button!
-![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3b.png)
-
-### What is happening here?
+### Background on what we expect:
 
 When you visit the demo page, you will reach the Nginx service. This Nginx service will then forward you to the oauth2-proxy service, which presents you with the choice to access our Open WebUI web service behind the gates via GitHub login. The oauth2-proxy will let GitHub handle the user authentication process and pass on the results to our Open WebUI service.
 
@@ -95,3 +74,21 @@ OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
 ```
 
 After setting the values, save the file, and run `source .env` again. Then, you can run `docker compose -f docker-compose-oauth.yml up -d`.
+
+
+## Day 4: Web App Example: OAuth + Open WebUI + Ollama
+
+If you don't have your own set up, we have an example set up that you can visit here: https://foooauth.llmcloud24.bihealth.org/
+
+# Pay attention to the screenshots and steps below!! Do not mess this up!!
+# Step 1
+![OAuth2 Proxy](../images/04-auth-1.png)
+
+# Step 2
+![Login using GitHub](../images/04-auth-2.png)
+
+# Step 3 and 4: Two things happening here!! GRANT/REQUEST and only then AUTHORIZE!!
+>[!IMPORTANT]
+>Pay attention to grant or request access to the llmcloud24 organization before clicking the green Authorize button!
+![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3b.png)
+
