@@ -58,6 +58,8 @@ Pay attention to the screenshots and steps below!
 
 When you visit the demo page, you will reach the Nginx service. This Nginx service will then forward you to the oauth2-proxy service, which presents you with the choice to access our Open WebUI web service behind the gates via GitHub login. The oauth2-proxy will let GitHub handle the user authentication process and pass on the results to our Open WebUI service.
 
+Here, we also restricted access to only GitHub accounts that are linked to the LLMCloud24 org, so we need to grant this permission first, before we try to authorize our user. Otherwise, they will not know that you are with the org and deny you access, as designed.
+
 ### How do we deploy them?
 
 #### Pre-requisites:
