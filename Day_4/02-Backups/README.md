@@ -29,7 +29,7 @@ After creating your Share, we need to make sure your VM is allowed to access it.
  - Click the "Add rule" button and use the following settings:
  	- Access Type: `ip`
  	- Access Level: `read-write`
- 	- Access To: `<VM's IP, e.g., 10.0.X.X>`
+ 	- Access To: `<VM's FLOATING IP, e.g., 172.X.X.X>`
  	- Click "Add" button
 
 ### 3. Hands-on: Accessing your Share from your VM
@@ -58,7 +58,7 @@ And now you should be able to browse into the `/nfs` directory and create some f
  - `touch hi.txt`
 
 If you want the share to be automatically mounted when your VM starts, you can add it into your `/etc/fstab` file:
- - `sudo nano /etc/fstab`
+ - `sudo nano /etc/fstab` <-- make sure to use `sudo` here!
  - add this to the very end of the file as a new line:
  - `<manila-prod.isi....> /nfs nfs defaults,rw,nofail 0 0`
  - Press `Ctrl`+`O` and then `Enter` to write the changes to the file
