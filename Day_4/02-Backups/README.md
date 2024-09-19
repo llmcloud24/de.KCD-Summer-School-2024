@@ -1,6 +1,6 @@
 ## Day 4: Backup
 
-### Hands-on: Pre-requisites
+### 0. Hands-on: Pre-requisites
 
 We will first make some space outside of our running VM to store our backups.
 
@@ -10,7 +10,7 @@ The other option is to create **Shares**, which are basically networked storage 
 
 Let's focus on **Shares** for now, and revisit the **Volumes** later if we have time.
 
-### Hands-on: Creating New NFS Share
+### 1. Hands-on: Creating New NFS Share
 
 Create a new **Share** with the correct settings as shown in the figures.
  - Left sidebar > Share > Shares > Create Share button (next to the search bar)
@@ -22,7 +22,7 @@ Create a new **Share** with the correct settings as shown in the figures.
  	- Share Type: `isilon-denbi`
  	- Rest can be left empty
  	
-### Hands-on: Adding your VM to your Share
+### 2. Hands-on: Adding your VM to your Share
 
 After creating your Share, we need to make sure your VM is allowed to access it.
  - Find your newly-created Share's name from the list of shares, and click the arrow beside the "Edit Share" button, and then click ok "Manage Rules"
@@ -32,7 +32,7 @@ After creating your Share, we need to make sure your VM is allowed to access it.
  	- Access To: `<VM's IP, e.g., 10.0.X.X>`
  	- Click "Add" button
 
-### Hands-on: Accessing your Share from your VM
+### 3. Hands-on: Accessing your Share from your VM
 
 Now that you've successfully created a Share and configured it to allow access from your VM, you can finally access it from your VM.
 
@@ -71,7 +71,7 @@ If everything goes right, you should be able to see that `/nfs` is already avail
  - `ls /nfs`
 
 
-### Hands-on: Making some copies of toy data
+### 4. Hands-on: Making some copies of toy data
 
 First, let's get some toy data to practice our backup skills.
  - `cd ~`
@@ -124,7 +124,7 @@ $ md5sum /nfs/llmcloud24_toy_data.tar
 The identical hash indicates that our backup `.tar` file is identical to the original, which is good news! The size differences are due to how the file systems handle storage.
 
 
-### Hands-on: Using Date and Time in Backups
+### 5. Hands-on: Using Date and Time in Backups
 
 So far, our simple backup solution would work for simple things. But what if your files are changing every day, and you want to preserve each of them separately? And of course you would like to be able to find the correct one when you want to restore them. Incorporating the current date and time information into your backup filenames helps in versioning and easy identification.
 
@@ -134,36 +134,68 @@ tar -cvf "/nfs/llmcloud24_toy_data_$(date).tar" ~/llmcloud24_toy_data
 
 # List backups in /nfs
 ls -lah /nfs/
-
-# You should see a file like llmcloud24_toy_data_20231005_143000.tar
 ```
 
-### Hands-on: Automating Backups with Cron Jobs
+You should see a file like `llmcloud24_toy_data_Thu Sep 19 00:02:47 UTC 2024.tar`.
 
-Automate your backups to run at scheduled intervals using cron.
+### 6. Task: Make a simple bash script to create backups
 
-crontab -e
-Add a Cron Job
-Add the following line to schedule a daily backup at 2 AM:
+You should be able to do this with everything you saw up until now, give it a try!
 
-0 2 * * * tar -cvf "/nfs/llmcloud24_toy_data_$(date +\%Y\%m\%d).tar" ~/llmcloud24_toy_data >/dev/null 2>&1
+You can use this template and create a `create_backup.sh` file:
+```bash
+#! /bin/bash
 
-Explanation:
-0 2 * * *: Runs at 2:00 AM every day.
->/dev/null 2>&1: Suppresses output and errors.
-Save and Exit
-Press Ctrl+O, then Enter to save.
-Press Ctrl+X to exit.
+# what and where is the thing you want to backup?
+
+# where do you want the backup to be?
+
+# do you want to add date/time information?
+
+# do you want to check if the copies are identical to the originals?
+```
+
+>[!IMPORTANT]
+>Make sure your script file is executable, which you can do by doing `chmod +x create_backup.sh`
+
+You can run the script by doing:
+ - `bash create_backup.sh`
+
+### 7. Hands-on: Automating Backups with Cron Jobs
+
+Now we have a script to create the backup, let's automate it to run at scheduled intervals using cron.
 
 >[!TIP]
 >If you see something like this when you run `sudo crontab -e` for the first time, just type `1` and press `Enter`.
-```sudo crontab -e
-no crontab for root - using an empty one
+>```$ sudo crontab -e
+>no crontab for root - using an empty one
+>
+>Select an editor.  To change later, run 'select-editor'.
+>  1. /bin/nano        <---- easiest
+>  2. /usr/bin/vim.basic
+>?  3. /usr/bin/vim.tiny
+>  4. /bin/ed
+>
+>Choose 1-4 [1]:```
 
-Select an editor.  To change later, run 'select-editor'.
-  1. /bin/nano        <---- easiest
-  2. /usr/bin/vim.basic
-  3. /usr/bin/vim.tiny
-  4. /bin/ed
+To add a cron job, you just have to run:
+ - `sudo crontab -e`
+ - Please read the information inside
 
-Choose 1-4 [1]:```
+
+For example, adding the following line will schedule a daily backup at 2 AM:
+
+`0 2 * * * tar -cvf "/nfs/llmcloud24_toy_data_$(date).tar" ~/llmcloud24_toy_data >/dev/null 2>&1`
+
+Explanations:
+ - `0 2 * * *`: Runs at 2:00 AM every day.
+ - `>/dev/null 2>&1`: Suppresses output and errors.
+
+>[!TIP]
+>First, find out the date and time format your VM is using by running `date`. It might be in UTC, which is 2 hours behind Berlin time, so please account for this when you set the time in cron.
+
+### 8. Task: Try to schedule this backup cron job to run in the next minutes and see if it works!
+
+
+### 9. Exercise: Try to automate the validity check of your files!
+
