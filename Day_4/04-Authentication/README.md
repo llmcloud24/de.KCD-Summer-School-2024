@@ -45,11 +45,15 @@ Stay tuned and look into the SOCKS proxy setup session and instructions if you w
 
 We have an example set up that you can visit here: https://foooauth.llmcloud24.bihealth.org/
 
-Pay attention to the screenshots and steps below!
+# Pay attention to the screenshots and steps below!! Do not mess this up!!
 
+# Step 1
 ![OAuth2 Proxy](../images/04-auth-1.png)
+
+# Step 2
 ![Login using GitHub](../images/04-auth-2.png)
 
+# Step 3 and 4: Two things happening here!! GRANT and only then AUTHORIZE!!
 >[!IMPORTANT]
 >Pay attention to grant access to the llmcloud24 organization before clicking the green Authorize button!
 ![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3b.png)
