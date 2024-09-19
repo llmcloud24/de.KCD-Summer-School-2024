@@ -84,4 +84,4 @@ OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
 OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
 ```
 
-After setting the values, save the file, and run `source .env` again. Then, you can run `docker compose -f docker-compose-oauth.yml`.
+After setting the values, save the file, and run `source .env` again. Then, you can run `docker compose -f docker-compose-oauth.yml up -d`.
