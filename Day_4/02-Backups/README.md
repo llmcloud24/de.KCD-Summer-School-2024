@@ -45,8 +45,9 @@ Click your newly-created Share's name, and you will see a "Share Overview" page.
 Now, SSH into your VM and run these commands:
  - `sudo apt install -y nfs-common rsync`
  - `sudo mkdir /nfs`
- - `sudo mount <manila-prod.isi...> /nfs`
  - `sudo chown ubuntu:ubuntu /nfs`
+ - `sudo mount <manila-prod.isi...> /nfs`
+ - `sudo chown ubuntu:ubuntu /nfs` <-- just in case
  - `df -h`
 
 >[!NOTE]
