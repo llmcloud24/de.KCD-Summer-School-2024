@@ -15,7 +15,7 @@ Ensuring continuous support throughout operations is crucial for maintaining the
 
 ## 0 General Project Setup
 
-You will need a VM for the LLM setup (you might reuse your VM from today if it is working):
+You will need a VM for the LLM setup:
 - Flavor: de.NBI GPU T4 medium
 - Image: Ubuntu-24.04-20240913-gpu
 - Network: LLMcloud24-network-2
