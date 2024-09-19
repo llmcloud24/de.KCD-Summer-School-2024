@@ -63,7 +63,10 @@ In this session, we showed and talked about:
  - what are **NOT** backups: snapshots, syncs, RAIDs, ...
  - how to add extra volume to the VMs on OpenStack, focusing on the NFS shares.
  - access the NFS share from the VM
- - 
+ - how to make backups
+ - how to validate/restore backups
+ - how to automate these steps
+ - how to monitor this setup
 
 ## 3 Certification
 Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
