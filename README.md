@@ -1,5 +1,8 @@
 # Welcome to the de.KCD summer school 2024: Deploying Large Language Models in the cloud
 
+>[!TIP]
+>GitHub has a Discussions function/page, so feel free to use that as well!
+>We will check and address your issues or suggestions there!
 
 ## Important Links 
 
