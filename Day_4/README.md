@@ -43,7 +43,7 @@ docker compose -f docker-compose-ollama.yml up --build
 
 How to run a model now inside the container e.g.
 ```
-docker exec -it ollama ollama run llama3.1
+docker exec -it ollama ollama run smollm
 ```
 
 ## 1 Monitoring
@@ -53,6 +53,13 @@ Ongoing monitoring of system and application performance, security, and infrastr
 ## 2 Backups
 
 Regular, secure backups following strategies to ensure that data can be restored after loss or corruption, maintaining operation continuity. Implementing automated backup solutions and storing backups in multiple locations safeguards against various failure scenarios and minimizes downtime.
+
+In this session, we showed and talked about:
+ - the important properties of a backup system: separation, restorability, automation, monitoring
+ - what are **NOT** backups: snapshots, syncs, RAIDs, ...
+ - how to add extra volume to the VMs on OpenStack, focusing on the NFS shares.
+ - access the NFS share from the VM
+ - 
 
 ## 3 Certification
 Implementing TLS (Transport Layer Security) certificates to secure data transmission ensures encrypted communication between clients and servers, protecting sensitive information from interception and tampering.
