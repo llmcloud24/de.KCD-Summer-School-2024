@@ -19,8 +19,10 @@ For now let's just focus on line 2: `OLLAMA_IP=your_ollama_vm_internal_ip_10.X.X
 
 >[!TIP]
 >If you still have your Ollama running on a VM from Day 3, you can keep using it. Find out the **internal IP** of this VM (should be something like 10.X.X.X), and if you followed the instructions from Sebastian, the port should be **11434**.
+
 >[!TIP]
 >If your Ollama has no models, you can run this to add the `smollm` model: `docker exec -it ollama ollama run smollm`. You can chat with it to confirm it's working, and then type `/bye` to exit.
+
 >[!TIP]
 >Otherwise if you have lost your Ollama, you can make a new GPU VM and refer to the `04-Authentication/docker-compose-ollama.yml` file. If you run your Ollama via this docker compose file, don't forget to download the model in the container: `docker exec -it ollama ollama run llama3.1`.
 
