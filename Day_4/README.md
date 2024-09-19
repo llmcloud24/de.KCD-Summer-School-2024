@@ -25,12 +25,12 @@ An overview of the planned project setup
 Deploy ollama with Docker without Github Oauth authentication
 
 ```
-sudo docker compose -f docker-compose-noauth.yml up
+docker compose -f docker-compose-ollama.yml up --build
 ```
 
 How to run a model now inside the container e.g.
 ```
-sudo docker exec -it ollama ollama run llama2
+docker exec -it ollama ollama run llama3.1
 ```
 
 ## 1 Monitoring
