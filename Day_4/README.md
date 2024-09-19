@@ -15,6 +15,16 @@ Ensuring continuous support throughout operations is crucial for maintaining the
 
 ## 0 General Project Setup
 
+You will need a VM for the LLM setup (you might reuse your VM from today if it is working):
+- Flavor: de.NBI GPU T4 medium
+- Image: Ubuntu-24.04-20240913-gpu
+- Network: LLMcloud24-network-2
+
+Please set up another smaller VM for the WebUI+OAuth setup:
+- Flavor: de.NBI default
+- Image: Ubuntu-24.04-20240913-gpu
+- Network: LLMcloud24-network-2
+
 An overview of the planned project setup
 
 ![alt text](images/llmcloud24.png)
