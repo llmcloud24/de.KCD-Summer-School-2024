@@ -23,7 +23,8 @@
 ### How is it useful here?
 
 * We use it to assign a nice URL for your VM (and port), e.g.: `10.0.2.10:80 --> foo-vm.llmcloud24.bihealth.org`
-* With this, your web service or app is exposed to the outside world can be visited externally
+* In this session, we all get some cute animals, e.g., `https://okapi.llmcloud24.bihealth.org`
+* With this, your web service or app is exposed to the outside world and can be visited externally. No need for SOCKS proxy yay!
 * We also use this to secure these URLs and make them HTTPS with our SSL certificates 
 
 
@@ -31,6 +32,6 @@
 
 * If you cloned our Summer School repository, you can `cd` into the `Day_4/03-Certification` folder
 * Then run `docker compose up --build` and it should work out of the box
-* If you visit <your VM's IP> in your browser with the SOCKS proxy, you will see an NPM page
-* You can also access the web page in your browser with the SOCKS proxy at `<your VM's IP>:81` with the user `admin@example.com` and password `changeme`
-* If your SOCKS proxy or browser does not work, you can also try to do `curl localhost:80` or `curl localhost:81` and look for the mentions related to Nginx Proxy Manager.
+* If you visit <your VM's FLOATING IP> in your browser with the SOCKS proxy, you will see a page indicating that Nginx Proxy Manager is installed and running.
+* You can also access the web page in your browser with the SOCKS proxy at `<your VM's FLOATING IP>:81` with the user `admin@example.com` and password `changeme`. This page is not exposed and is only accessible from your VM's floating IP.
+* If your SOCKS proxy or browser does not work, you can also try to do `curl localhost:80` or `curl localhost:81` and look for the mentions related to Nginx Proxy Manager just to get confirmation that you did everything correctly.
