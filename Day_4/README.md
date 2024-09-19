@@ -30,10 +30,14 @@ An overview of the planned project setup
 ![alt text](images/llmcloud24.png)
 
 >[!TIP]
->If you ever feel like you messed up your docker stuff, you can try to run this to purge everything:
->```docker stop $(docker ps -q) ; docker rm $(docker ps -a -q) ; docker rmi $(docker images -q) ; docker volume rm $(docker volume ls -q) ; docker network rm $(docker network ls -q) ; docker system prune -a --volumes```
+>You, as a participant in this Summer School, are one of the Admins in this overview. The Users would be the users you want to service, once you have your things deployed and running.
 
 ## Deploying ollama with docker setup
+
+>[!TIP]
+>If you ever feel like you messed up your docker stuff, you can try to run this to purge everything:
+>```docker stop $(docker ps -q) ; docker rm $(docker ps -a -q) ; docker rmi $(docker images -q) ; docker volume rm $(docker volume ls -q) ; docker network rm $(docker network ls -q) ; docker system prune -a --volumes```
+>You could do this if you want to have something closer to a fresh-start.
 
 Deploy ollama with Docker without Github Oauth authentication
 
