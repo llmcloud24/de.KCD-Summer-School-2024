@@ -52,7 +52,7 @@ Pay attention to the screenshots and steps below!
 
 >[!IMPORTANT]
 >Pay attention to grant access to the llmcloud24 organization before clicking the green Authorize button!
-![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3.png)
+![Grant access to llmcloud24 organization and authorize your GitHub user](../images/04-auth-3b.png)
 
 ### What is happening here?
 
