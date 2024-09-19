@@ -2,7 +2,7 @@
 
 Before we proceed with the Authentication part, let's just have a mini hands-on session to set up Open WebUI, which is a web interface that can be used to chat with Ollama.
 
-First, open the  `variables.env` in the `04-Authentication` folder. You can do so via `nano variables.env` when you're inside the folder.
+First, open the  `.env` in the `04-Authentication` folder. You can do so via `nano .env` when you're inside the folder.
 
 The content of this file will look like this. Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
 ```bash
@@ -20,9 +20,9 @@ For now let's just focus on line 2: `OLLAMA_IP=your_ollama_vm_internal_ip_10.X.X
 >[!TIP]
 >If you still have your Ollama running on a VM from Day 3, you can keep using it. Find out the **internal IP** of this VM (should be something like 10.X.X.X), and if you followed the instructions from Sebastian, the port should be **11434**.
 >
->Otherwise if you have lost your Ollama, you can make a new GPU VM and refer to the `04-Authentication/docker-compose-ollama.yml` file.
+>Otherwise if you have lost your Ollama, you can make a new GPU VM and refer to the `04-Authentication/docker-compose-ollama.yml` file. If you run your Ollama via this docker compose file, don't forget to download the model in the container: `docker exec -it ollama ollama run llama3.1`.
 
-Save the file, and then do `source variables.env`, this will load the variables we just defined into your environment.
+Save the file, and then do `source .env`, this will load the variables we just defined into your environment. To check if the changes took effect, you can do `echo $OLLAMA_IP`.
 
 Then you can do `docker compose -f docker-compose-webui.yml up --build` to get your own Open WebUI service running.
 
@@ -69,11 +69,11 @@ If you intend to do this yourself, you will need the following things:
    - Homepage URL: `https://$yourAnimal.llmcloud24.bihealth.org/`
    - Authorization callback URL: `https://$yourAnimal.llmcloud24.bihealth.org/oauth2/callback`
    - You can leave the **Enable Device Flow** unchecked
- - After this, you will get a **Client secrets**, make sure you note this down somewhere, or it will disappear!
+ - After this, you can generate a **Client secrets**, make sure you note this down somewhere, or it will disappear! They are both mixtures of numbers and alphabets.
  - You can also find your **Client ID** on the same page, you need both of these.
  - In addition, generate a **cookie secret** that we will use later, so note it down somewhere: `openssl rand -hex 16`
 
-Again, set open up the `variables.env` file to update it with the new details.
+Again, open up the `.env` file to update it with the new details.
 
 Make sure you replace the values after the `=` sign with your own values! Make sure there are no spaces after the `=` too!
 ```bash
@@ -84,4 +84,4 @@ OAUTH2_PROXY_CLIENT_SECRET=somethingsomething
 OAUTH2_PROXY_COOKIE_SECRET=somethingsomething
 ```
 
-After setting the values, save the file, and run `source variables.env` again. Then, you can run `docker compose -f docker-compose-oauth.yml`.
+After setting the values, save the file, and run `source .env` again. Then, you can run `docker compose -f docker-compose-oauth.yml`.

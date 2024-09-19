@@ -15,11 +15,6 @@ services:
       - ENV=prod
       - WEBUI_URL=http://localhost:8080
       - WEBUI_SECRET_KEY=t0p-s3cr3t
-      - ENABLE_OAUTH_SIGNUP=true
-      - OAUTH_MERGE_ACCOUNTS_BY_EMAIL=true
-      - WEBUI_AUTH_TRUSTED_EMAIL_HEADER=X-Forwarded-Email
-      - WEBUI_AUTH_TRUSTED_NAME_HEADER=X-Forwarded-User
-      - DEFAULT_USER_ROLE=user
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped

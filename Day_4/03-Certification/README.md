@@ -31,4 +31,6 @@
 
 * If you cloned our Summer School repository, you can `cd` into the `Day_4/03-Certification` folder
 * Then run `docker compose up --build` and it should work out of the box
-* You can then access the web page in your browser with the SOCKS proxy at `<your VM's IP>:81` with the user `admin@example.com` and password `changeme`
+* If you visit <your VM's IP> in your browser with the SOCKS proxy, you will see an NPM page
+* You can also access the web page in your browser with the SOCKS proxy at `<your VM's IP>:81` with the user `admin@example.com` and password `changeme`
+* If your SOCKS proxy or browser does not work, you can also try to do `curl localhost:80` or `curl localhost:81` and look for the mentions related to Nginx Proxy Manager.

@@ -19,6 +19,9 @@ An overview of the planned project setup
 
 ![alt text](images/llmcloud24.png)
 
+>[!TIP]
+>If you ever feel like you messed up your docker stuff, you can try to run this to purge everything:
+>```docker stop $(docker ps -q) ; docker rm $(docker ps -a -q) ; docker rmi $(docker images -q) ; docker volume rm $(docker volume ls -q) ; docker network rm $(docker network ls -q) ; docker system prune -a --volumes```
 
 ## Deploying ollama with docker setup
 
