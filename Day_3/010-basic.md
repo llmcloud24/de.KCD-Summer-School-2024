@@ -38,6 +38,8 @@ Without specifying the exact model variant, Ollama will deploy the default for
 this model. I encourage you to try the same queries as with the GPT-2 model and
 see how the responses differ.
 
+When you're done chatting, you can type `/bye` to exit from the running chat session.
+
 > [!TIP]
 > As an exercise, find out which exact model variant is deployed by default
 > (size, quantisation, etc.).
