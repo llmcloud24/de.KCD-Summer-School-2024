@@ -1,7 +1,7 @@
 # Welcome to the de.KCD summer school 2024: Deploying Large Language Models in the cloud
 
 >[!TIP]
->GitHub has a Discussions function/page, so feel free to use that as well!
+>GitHub has a Discussions function/page (https://github.com/llmcloud24/de.KCD-Summer-School-2024/discussions), so feel free to use that as well!
 >We will check and address your issues or suggestions there!
 
 ## Important Links 
@@ -11,6 +11,8 @@ Page: https://llmcloud2024.github.io
 Schedule: https://llmcloud24.github.io/schedule.html  
 
 Github : https://github.com/llmcloud24/de.KCD-Summer-School-2024  
+
+Discussions: https://github.com/llmcloud24/de.KCD-Summer-School-2024/discussions
 
 DeNBI cloud: https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=LLMcloud24  
 
