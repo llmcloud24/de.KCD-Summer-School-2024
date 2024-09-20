@@ -1,9 +1,14 @@
-### Day 2: Tuesday, September 17 - How to Data
+### Day 2 Checklist - How to Data
 
-Before we can get the data to work for us, we need to work for the data: draft a data management plan, record all processing activities in accordance with the EU-GDPR, ensure IT-security and ethically sound and unbiased FAIR data.
-  
-[10:00 – 11:00] Data Protection (Fabian Praßer)  
-[11:00 - 12:00] Data Management I (Jeanne Wilbrandt)  
-[12:00 – 13:00] Lunch Break  
-[13:00 – 14:00] Data Management II (Jeanne Wilbrandt)  
-[14:00 - 15:00] Data Ethics (Lisa Schaak)  
+Think about these things before (!) setting up your LLM in the cloud:
+
+**Data Privacy**
+If you work with personal data check the EU-GDPR and identify data subject and data controller (you might see the need for a data processing agreement). Please take special care with anonymization and pseudonimization (and their shortcomings). An overview of all personal data being processed is usually mandatory. Downloading LLM fine-tuned on personal data is usually not permitted.
+
+
+**Data Management**
+It's always good to think about FAIR (findable, accessible, interoperable and reusable) research data. Not only for promoting open science but also for helping you through the jungle of your own work. Often a Data Management Plan is also mandatory for funding.
+
+
+**Data Ethics**
+Please beware of LLM shortcomings such as bias, hallucinations and missing explainability - so take special care with research question, study design and selection of training data. Especially if you research will potential result in real life applications, please take interests and risks for all concerned parties into account. Usually you have to get an ethics review from the ethics commission of your research institute.
