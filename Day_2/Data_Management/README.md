@@ -1,4 +1,4 @@
-**Workshop Material by Jeanne Wilbrandt (FLI)**
+**Workshop Material by Jeanne Wilbrandt (FLI) for the de.KCD Summer School 2024**
 
 Slides: https://cloud.leibniz-fli.de/s/QrZ4dikeDRFen6f
 Results: https://cloud.leibniz-fli.de/s/xz6tTcQdYSZTHNy
@@ -20,14 +20,14 @@ Please note that the following research project templates generally assume that 
 * Example Project Open Data Sharing: https://osf.io/59gte/
   
 **R packages for project templates**
-•	WORCS - Workflow for Open Reproducible Code in Science for R users: https://cjvanlissa.github.io/worcs/index.html 
-•	workflowr - organized + reproducible + shareable data science in R: https://github.com/workflowr/workflowr 
-•	starter - a toolkit for starting new projects: https://www.danieldsjoberg.com/starter/ 
-•	rrtools - Tools for Writing Reproducible Research in R: https://github.com/benmarwick/rrtools 
-•	targets - Function-oriented Make-like declarative workflows for R: https://docs.ropensci.org/targets/ 
+* WORCS - Workflow for Open Reproducible Code in Science for R users: https://cjvanlissa.github.io/worcs/index.html 
+*	workflowr - organized + reproducible + shareable data science in R: https://github.com/workflowr/workflowr 
+*	starter - a toolkit for starting new projects: https://www.danieldsjoberg.com/starter/ 
+*	rrtools - Tools for Writing Reproducible Research in R: https://github.com/benmarwick/rrtools 
+*	targets - Function-oriented Make-like declarative workflows for R: https://docs.ropensci.org/targets/ 
 Code projects
-•	Python cookiecutter template: https://github.com/Materials-Data-Science-and-Informatics/fair-python-cookiecutter
-•	R devtools: https://devtools.r-lib.org/
+*	Python cookiecutter template: https://github.com/Materials-Data-Science-and-Informatics/fair-python-cookiecutter
+*	R devtools: https://devtools.r-lib.org/
 
 **Backup** Tools (German): https://forschungsdaten-thueringen.de/veranstaltung/coffee-lecture-3-2-1-0-frisch-ans-werk-helfertools-fuer-backups.html
 
