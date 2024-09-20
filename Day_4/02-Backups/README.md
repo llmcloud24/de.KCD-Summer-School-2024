@@ -154,6 +154,10 @@ You can use this template and create a `create_backup.sh` file:
 # do you want to add date/time information?
 
 # do you want to check if the copies are identical to the originals?
+
+# don't forget the actual commands to backup the files
+
+# maybe you also want to log things
 ```
 
 >[!IMPORTANT]
@@ -174,10 +178,10 @@ Now we have a script to create the backup, let's automate it to run at scheduled
 >Select an editor.  To change later, run 'select-editor'.
 >  1. /bin/nano        <---- easiest
 >  2. /usr/bin/vim.basic
->?  3. /usr/bin/vim.tiny
+>  3. /usr/bin/vim.tiny
 >  4. /bin/ed
 >
->Choose 1-4 [1]:```
+>Choose 1-4 [1]:
 
 To add a cron job, you just have to run:
  - `sudo crontab -e`
@@ -199,4 +203,25 @@ Explanations:
 
 
 ### 9. Exercise: Try to automate the validity check of your files!
+
+
+### 10. Monitoring
+
+Towards the end of the session, you were also introduced to the idea of monitoring your backups with a real life example and implementation shown.
+
+>[!TIP]
+>Obviously, there are many ways to slice a salami, but this is the exact set up that I want for my particular use case. Always think in terms of your own usec ase and what exactly it is that you are trying to achieve or prevent.
+
+My implementation basically utilizes all these things:
+
+1. a script that does the backup
+    - simple bash script
+2. an automated job that runs the script at the scheduled time
+    - another simple bash script
+3. a script that checks the file and volume information of these backups and expose these information via an API endpoint
+    - python script + FastAPI
+4. a continuous integration/deployment workflow that checks the API endpoint and create the web pages with fancy graphs and source control
+    - simple GitLab CI/CD workflow that curls the API endpoint and make HTML files out of it
+    - Upptime that checks the HTML files and updates itself and present a nice dashboard integrated with GitHub issues and etc
+
 
