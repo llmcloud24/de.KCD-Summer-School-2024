@@ -16,6 +16,11 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
 - try to login at the de.NBI Cloud Berlin dashboard: https://denbi-cloud.bihealth.org
 
 ## 2. How to deploy an vm:
+
+>[!IMPORTANT]
+>We generally recommend that you generate your own key pair (`ssh-keygen` command can be used), and then upload the public key to the de.NBI cloud portal AND the OpenStack Dashboard.
+>With this method, you are also less likely to run into issues. If you don't know which one is the public or private key, just open them in a text editor. The private key will tell you it's a private key.
+
 - Create your pair of keys in the horizon dashboard: https://cloud.denbi.de/wiki/quickstart/#ssh-setup
 - Upload your public key in the de.NBI cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
 - How to create your own vm: https://cloud.denbi.de/wiki/Compute_Center/Berlin/#deploy-your-vms
@@ -30,16 +35,22 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
   - public key needs to be uploaded in cloud portal: https://cloud.denbi.de/portal/webapp/#/userinfo
   - pulic key needs to be added during the creation of the vm: https://cloud.denbi.de/wiki/quickstart/#floating-ip
   - you would need to setup a ProxyJump in order to connect to your own VM e.g. provide a configuration similar to this one:
-  
-```
-## General info regarding Host entries:
-# Host <this can be any name you like>
-#     HostName <this must either be a domain or an ip>
-#     User {LifeScienceLogin}
-#     IdentityFile {PATH_TO_PRIVATE_KEY}
-#     ServerAliveInterval 120
 
-Host denbi-jumphost-01.bihealth.org
+>[!NOTE]
+>Some general notes about your ssh config entries:
+>
+>**Host**: can be anything you like, you will use it often like this: `ssh my-host`
+>
+>**HostName**: this must either be a domain or an IP
+>
+>**User**: this will be your LifeScienceLogin ID found at https://cloud.denbi.de/portal/webapp/#/userinfo
+>
+>**IdentityFile**: this should be the full path to your **private** key, see important note above
+>
+>**ProxyJump denbi-jumphost-01.bihealth.org** keep this line for your de.NBI VMs
+
+```
+Host denbi-jumphost
     HostName denbi-jumphost-01.bihealth.org
     User {LifeScienceLogin}
     IdentityFile {PATH_TO_PRIVATE_KEY}
@@ -49,7 +60,7 @@ Host {NAME_OF_VM}
     HostName {172.16.XXX.XXX}
     IdentityFile {PATH_TO_PRIVATE_KEY}
     User {ubuntu / centos}
-    ProxyJump denbi-jumphost-01.bihealth.org
+    ProxyJump denbi-jumphost
 ```
 ## 3. How to add more storage to your vm: 
 - https://cloud.denbi.de/wiki/Compute_Center/Berlin/#storage
