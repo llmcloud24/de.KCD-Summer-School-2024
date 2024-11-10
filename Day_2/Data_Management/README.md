@@ -1,6 +1,26 @@
-**Workshop Material by Jeanne Wilbrandt (FLI) for the de.KCD Summer School 2024**
+## Data management
+An overview of research data management concepts and methods which are essential to ensuring data quality, integrity, and accessibility, aligning with the FAIR principles (findable, accessible, interoperable, and reusable).
 
-Slides: https://cloud.leibniz-fli.de/s/QrZ4dikeDRFen6f
+### Learning goals
+Learn the basics of research data management (RDM) and documentation, understand the role of data management in enabling data reuse aligned with FAIR principles, and explore ways of managing LLM datasets.
+
+### Key issues
++ different perspectives on the importance of data management: historical, personal, scientific
++ types of data: research data, meta data
++ management and life cycle
++ FAIR data principles
++ documentation methods and principles
++ avoiding data loss
++ publishing data - best practices
++ LLM data sets
+
+### Questions
++ What are the key stages in the data life cycle, and how should data be managed at each stage from collection to archiving?
++ What are the challenges in making data both accessible and interoperable, especially in cross-disciplinary or cross-institutional research settings?
+
+### Resources
+
+Slides: https://cloud.leibniz-fli.de/s/QrZ4dikeDRFen6f  
 Results: https://cloud.leibniz-fli.de/s/xz6tTcQdYSZTHNy
 
 My Coffee Lecture Series: https://zenodo.org/doi/10.5281/zenodo.7573694
