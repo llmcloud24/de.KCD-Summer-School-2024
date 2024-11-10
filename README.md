@@ -18,9 +18,7 @@ DeNBI cloud: https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=
 
 DeNBI cloud wiki: https://cloud.denbi.de/wiki/Compute_Center/Berlin
 
-Sep 16-20 online via Teams: 
-
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjNkYWY3N2ItOGQ1ZS00MjI4LTk5MjYtOTQ1N2U3ZGQ3ZmI0%40thread.v2/0?context=%7b%22Tid%22%3a%22afe91939-923e-432c-bc66-cbc3ec18d02c%22%2c%22Oid%22%3a%22162bbf8b-ea15-4a0e-899a-cc6f68987ed6%22%7d
+Sep 16-20 online via Teams
 
 ## Contact 
 
