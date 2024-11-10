@@ -2,7 +2,7 @@
 
 Think about these things before (!) setting up your LLM in the cloud:
 
-**Data Privacy**  
+[**Data Privacy**](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2/Data_Management)
 If you work with personal data check the EU-GDPR and identify data subject and data controller (you might see the need for a data processing agreement). Please take special care with anonymization and pseudonimization (and their shortcomings). An overview of all personal data being processed is usually mandatory. Downloading LLM fine-tuned on personal data is usually not permitted.
 
 
