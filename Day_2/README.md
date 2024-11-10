@@ -3,10 +3,12 @@
 Think about these things before (!) setting up your LLM in the cloud:
 
 [**Data Privacy**](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2/Data_Management)
+
 If you work with personal data check the EU-GDPR and identify data subject and data controller (you might see the need for a data processing agreement). Please take special care with anonymization and pseudonimization (and their shortcomings). An overview of all personal data being processed is usually mandatory. Downloading LLM fine-tuned on personal data is usually not permitted.
 
 
-**Data Management**  
+[**Data Management**](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2/Data_Management) 
+
 It's always good to think about FAIR (findable, accessible, interoperable and reusable) research data. Not only for promoting open science but also for helping you through the jungle of your own work. Often a Data Management Plan is also mandatory for funding.
 
 
