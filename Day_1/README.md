@@ -9,6 +9,9 @@ Our first day will give you an introduction to the setup of our OpenStack Cloud,
   - A brief overview of the general OpenStack components can be found here: https://cloud.denbi.de/wiki/Concept/openstack/
 3. Specific Information about de.NBI Cloud site in Berlin: **https://cloud.denbi.de/wiki/Compute_Center/Berlin**
 
+[Slides for general introduction](https://github.com/llmcloud24/de.KCD-Summer-School-2024/blob/main/Day_1/deKCD_day1_project_intro.pdf)  
+[Slides for technical introduction](https://github.com/llmcloud24/de.KCD-Summer-School-2024/blob/main/Day_1/deKCD_day1_technical_intro.pdf)
+
 ## Hands-on part
 
 ## 1. Join the LLMcloud24 project in de.NBI Cloud Berlin
