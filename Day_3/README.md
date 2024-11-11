@@ -1,5 +1,3 @@
-Afternoon link: https://us06web.zoom.us/j/83573958835?pwd=77aaLMnAm1JW4aw8XdgelwN0pIiw3I.1
-
 # Day 3 - Deploying LLMs in the Cloud
 
 Table of Contents:
