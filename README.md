@@ -6,19 +6,14 @@
 
 ## Important Links 
 
-Page: https://llmcloud2024.github.io
+* Page: https://llmcloud2024.github.io
+* Schedule: https://llmcloud24.github.io/schedule.html  
+* Github : https://github.com/llmcloud24/de.KCD-Summer-School-2024  
+* Discussions: https://github.com/llmcloud24/de.KCD-Summer-School-2024/discussions
+* DeNBI cloud: https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=LLMcloud24  
+* DeNBI cloud wiki: https://cloud.denbi.de/wiki/Compute_Center/Berlin
 
-Schedule: https://llmcloud24.github.io/schedule.html  
 
-Github : https://github.com/llmcloud24/de.KCD-Summer-School-2024  
-
-Discussions: https://github.com/llmcloud24/de.KCD-Summer-School-2024/discussions
-
-DeNBI cloud: https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=LLMcloud24  
-
-DeNBI cloud wiki: https://cloud.denbi.de/wiki/Compute_Center/Berlin
-
-Sep 16-20 online via Teams
 
 ## Contact 
 
@@ -27,18 +22,7 @@ If you have any questions, please write to: lisa.schaak@bih-charite.de
 
 ## Program
 
-### Day 0: Preparation
-
-Kindly reminder – Preparation for everyone who hasn’t done so:
-
-•	Please send your github name via email to lisa.schaak@bih-charite.de
-
-•	Please apply to our LLMcloud24 project on de.NBI cloud -> [Link](https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=LLMcloud24)
-
-We will collect registrations, and approve everyone before the workshop. Then you can also upload your public SSH key to the de.NBI portal. In case of questions please refer to the [de.NBI cloud wiki](https://cloud.denbi.de/wiki/registration/) and the [git documentation](https://git-scm.com/book/en/v2).
-
-
-### Day 1: Monday, September 16 - How to Cloud
+### [Day 1: Monday, September 16 - How to Cloud](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_1)
 
 Getting to know the de.NBI Cloud and each other: celebrating interdisciplinary and technological progress. Take a deep dive into access, roles and requirements and learn more about the project idea. 
 
@@ -49,7 +33,7 @@ Getting to know the de.NBI Cloud and each other: celebrating interdisciplinary a
 [13:00 – 15:00] de.NBI Cloud continued (Martin Braun, Jakob Mathis)  
 
   
-### Day 2: Tuesday, September 17 - How to Data
+### [Day 2: Tuesday, September 17 - How to Data](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2)
 
 Before we can get the data to work for us, we need to work for the data: draft a data management plan, record all processing activities in accordance with the EU-GDPR, ensure IT-security and ethically sound and unbiased FAIR data.
   
@@ -61,7 +45,7 @@ Before we can get the data to work for us, we need to work for the data: draft a
 
 
   
-### Day 3: Wednesday, September 18 - How to LLM
+### [Day 3: Wednesday, September 18 - How to LLM](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_3)
 
  Now we are finally ready for the long awaited action: today we will be deploying our own LLM in the de.NBI cloud. Learn all the practical ins and outs of generative AI and transformer architecture. And see all our planning efforts from the previous days come to fruition.
 
@@ -70,7 +54,7 @@ Before we can get the data to work for us, we need to work for the data: draft a
 [13:00 – 15:00] LLM Deployment II (Sebastian Lobentanzer)  
 
 
-### Day 4: Thursday, September 19 - How to Service
+### [Day 4: Thursday, September 19 - How to Service](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_4)
   
 We are live – but for how long? Today we will take another deep dive into the technical details – such as Let’s Encrypt certificates, reverse proxy, user authentication and backup – that are fundamental to keeping our service up and running.
 
@@ -78,7 +62,7 @@ We are live – but for how long? Today we will take another deep dive into the 
 [12:00 - 13:00] Lunch Break  
 [13:00 - 15:00] Operations II (Martin Braun, Jakob Mathis, Foo Wei Ten)  
 
-### Day 5: Friday, September 20 - How to Success
+### [Day 5: Friday, September 20 - How to Success](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_5)
    
 You've made it! Today we will be wrapping up our week's work: we will reserve some time for self-study and Q&As to complete your hands-on examples. We will also look at some real-life examples and discuss the associated successes and challenges.
 
