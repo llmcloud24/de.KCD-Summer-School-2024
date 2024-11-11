@@ -1,6 +1,8 @@
 ### Day 2 Checklist - How to Data
 
-It is advisable to think about these things before (!) setting up your LLM in the cloud:
+Here is a sort overview of today's topics. You can find more infos  and all slides and additional materials by Prof. Fabian Praßer, Dr. Jeanne Wilbrandt and Lisa Schaak in the corresponding subfolders.  
+
+In general it is advisable to think about these things before (!) setting up your LLM in the cloud:
 
 [**Data Privacy**](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2/Data_Management)
 
@@ -15,4 +17,3 @@ It's always good to think about FAIR (findable, accessible, interoperable and re
 [**Data Ethics**](https://github.com/llmcloud24/de.KCD-Summer-School-2024/tree/main/Day_2/Data_Ethics )  
 Please beware of LLM shortcomings such as bias, hallucinations and missing explainability - so take special care with research question, study design and selection of training data. Especially if you research will potential result in real life applications, please take interests and risks for all concerned parties into account. Usually you have to get an ethics review from the ethics commission of your research institute.
 
-**Find more infos and all slides and additional materials by Prof. Fabian Praßer, Dr. Jeanne Wilbrandt and Lisa Schaak in the corresponding subfolders.**
