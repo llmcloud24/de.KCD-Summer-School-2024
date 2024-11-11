@@ -1,4 +1,4 @@
-## How to Data protection
+## Data protection
 This topic addresses the secure handling of personal and sensitive data, including adherence to privacy laws - most prominently the EU-GDPR. 
 ### Learning goals
 Understand foundational principles of data protection, focusing on best practices for managing personally identifiable information and sensitive data, and ensuring compliance with national and international data privacy regulations.
