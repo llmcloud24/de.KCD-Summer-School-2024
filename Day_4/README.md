@@ -139,6 +139,8 @@ These are the assumptions:
 - you have your own certs
 - your openwebui is running internally on `10.0.1.123:8080`
 
+When you go to `https://llm.domain.com`, you will now reach your openwebui interface running on `10.0.1.123:8080`!
+
 ```
 server {
         listen 443 ssl default_server;
