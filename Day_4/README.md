@@ -129,3 +129,44 @@ With the extension installed you can setup multiple configurations for each conn
 Give the ip address of localhos 127.0.0.1 and fill in the port of the ssh connection, 4321. Select 'SOCKS v5' as 'Server Type'. Give the connection a recognizable name and save it by clicking on the green checkmark.
 
 ![browser extenion setup](images/proxy_browser_extension_setup.png)
+
+## Extra: Configuring your NGINX loadbalancer/reverse proxy for ollama/openwebui:
+
+If you want to use a separate nginx loadbalancer or reverse proxy on top of your VMs, you can try out the following nginx config.
+
+These are the assumptions:
+- your domain is `https://llm.domain.com`
+- you have your own certs
+- your openwebui is running internally on `10.0.1.123:8080`
+
+```
+server {
+        listen 443 ssl default_server;
+        listen [::]:443 ssl default_server;
+        ssl_certificate </path/to/certs>;
+        ssl_certificate_key </path/to/certs>;
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_ciphers 'ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384';
+        ssl_prefer_server_ciphers on;
+
+        server_name llm.domain.com; # maybe add internal ips if needed
+
+        location / {
+            proxy_set_header   X-Real-IP $remote_addr;
+            proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header   X-Forwarded-Proto $scheme;
+            proxy_set_header   Host $http_host;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_http_version 1.1;
+            proxy_pass http://10.0.1.123:8080;
+        }
+
+        location /ws/ {
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "Upgrade";
+            proxy_set_header Host $host;
+            proxy_http_version 1.1;
+            proxy_pass http://10.0.1.123:8080;
+        }
+```
