@@ -12,7 +12,6 @@ Understand foundational principles of data protection, focusing on best practice
 + How should researchers handle data disclosure to third parties, and what precautions must be in place to protect privacy?
 
 ### Resources
-+ [workshop slides](https://github.com/llmcloud24/de.KCD-Summer-School-2024/blob/main/Day_2/Data_Privacy/LLM-Compliance-Data-Protection.pdf)
 + [full text of the EU Charter of Fundamental Rights](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012P/TXT)
 + [full text of the WMA Declaration of Helsinki](https://www.wma.net/policies-post/wma-declaration-of-helsinki/)
 + [full text of the EU-GDPR in English and German](https://gdpr-info.eu/)
