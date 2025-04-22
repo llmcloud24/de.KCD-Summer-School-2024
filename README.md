@@ -15,10 +15,12 @@ Over the course of the week, we will walk you through the entire lifecycle of LL
 ## Important Links 
 
 * TESS: https://tess.elixir-europe.org/events/de-kcd-summer-school-2024-deploying-llms-in-the-cloud 
-* Schedule: https://llmcloud24.github.io/schedule.html  
+* Webpage: https://llmcloud24.github.io/ (incl. schedule and link to registration -> closed)
 * Github : https://github.com/llmcloud24/de.KCD-Summer-School-2024
 * DeNBI cloud: https://signup.aai.lifescience-ri.eu/fed/registrar/?vo=denbi&group=LLMcloud24  
 * DeNBI cloud wiki: https://cloud.denbi.de/wiki/Compute_Center/Berlin
+
+
 
  ### Trainers
 
@@ -42,8 +44,8 @@ Over the course of the week, we will walk you through the entire lifecycle of LL
 
 For the original Summer School we set up an openstack project at the Berlin node of the de.NBI cloud, this project was deleted after the end of the Summer School. To follow on your own, you (resp. your PI) need to register and apply for a new project at the de.NBI cloud:
 - Registration for de.NBI: [https://cloud.denbi.de/wiki/registration/](https://cloud.denbi.de/wiki/registration/)
--  Application for a project: ([https://cloud.denbi.de/wiki/portal/allocation/](https://cloud.denbi.de/wiki/portal/allocation/))
--  Quota: for each participant we recommend at least "de.NBI mini" image (16 GB RAM and 8 CPUs)
+-  Application for a project: [https://cloud.denbi.de/wiki/portal/allocation/](https://cloud.denbi.de/wiki/portal/allocation/)
+-  Quota: For each participant we recommend at least one "de.NBI mini" image (16 GB RAM and 8 CPUs).
 -  Note for trainers: We recommend making sure the vms can be created, ssh works, connection works in the vms, docker works, etc. beforehand and get some external users to check, since things might be different in different locations and project.
 
 
