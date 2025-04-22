@@ -1,4 +1,4 @@
-# Welcome to the de.KCD summer school 2024: Deploying Large Language Models in the cloud
+# Welcome to the de.KCD Summer School 2024: Deploying Large Language Models in the Cloud
 
 
 Ever wanted to look behind the – technical and organizational – scenes of large language models? Already have your own AI research project sketched out but unsure of how to actually get started? Looking for cloud storage to power up your LLM but getting caught up in regulatory requirements?
